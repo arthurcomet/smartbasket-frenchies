@@ -1,0 +1,8 @@
+# data and secrets never go in the repo
+data/
+*.csv.zip
+kaggle.json
+.env
+*.key
+.ipynb_checkpoints/
+__pycache__/

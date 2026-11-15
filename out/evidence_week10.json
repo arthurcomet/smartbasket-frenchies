@@ -1,0 +1,31 @@
+{
+  "load": {
+    "default_MB": 1037.9,
+    "typed_MB": 356.8,
+    "default_s": 10.2,
+    "typed_s": 12.8
+  },
+  "dataset": {
+    "orders": 3214874,
+    "basket_lines": 32434489,
+    "distinct_products_bought": 49677,
+    "catalogue_products": 49688,
+    "basket_size_mean": 10.09,
+    "basket_size_median": 8.0,
+    "basket_size_max": 145
+  },
+  "apriori_sample": {
+    "baskets": 50000,
+    "support_pct": 0.5,
+    "support_baskets": 250,
+    "distinct_items": 29207,
+    "frequent_items": 257,
+    "pair_counters": 31308,
+    "frequent_pairs": 82,
+    "seconds": 0.48,
+    "brute_force_pair_counters": 426509821,
+    "rules": 164
+  },
+  "top_by_confidence_popular_consequents": 10,
+  "top_by_lift_popular_consequents": 5
+}
