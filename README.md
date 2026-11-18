@@ -27,7 +27,10 @@ The user describes a basket in natural language; the agent queries the mined ass
 notebooks/   one Colab notebook per stage, run in order
 out/         results of each run (figures, CSV, evidence JSON)
 reports/     weekly progress reports
+docs/        team guide (French): setup, weekly tasks, AI prompt
 ```
+
+New team member? Start with [`docs/GUIDE_EQUIPE.md`](docs/GUIDE_EQUIPE.md), then [`docs/SEMAINE_11.md`](docs/SEMAINE_11.md).
 
 | Notebook | Stage |
 |---|---|
