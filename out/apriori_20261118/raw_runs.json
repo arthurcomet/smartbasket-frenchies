@@ -1,0 +1,3422 @@
+[
+  {
+    "status": "ok",
+    "mining_s": 0.9142698000068776,
+    "worker_baseline_mb": 35.323904,
+    "worker_final_mb": 48.340992,
+    "distinct_items": 29207,
+    "frequent_items": 257,
+    "pair_counters": 31308,
+    "frequent_pairs": 82,
+    "possible_all_pairs": 426509821,
+    "rules": 164,
+    "positive_rules": 162,
+    "covered_products": 34,
+    "coverage_pct": 0.06842698438254709,
+    "top_rules": [
+      {
+        "if_bought": "Limes",
+        "then_buy": "Organic Cilantro",
+        "support": 268,
+        "confidence": 0.12276683463124141,
+        "lift": 6.101731343501065,
+        "a_id": 26209,
+        "b_id": 31717
+      },
+      {
+        "if_bought": "Organic Cilantro",
+        "then_buy": "Limes",
+        "support": 268,
+        "confidence": 0.2664015904572565,
+        "lift": 6.101731343501065,
+        "a_id": 31717,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Organic Yellow Onion",
+        "then_buy": "Organic Garlic",
+        "support": 356,
+        "confidence": 0.19744869661674985,
+        "lift": 5.859011769043022,
+        "a_id": 22935,
+        "b_id": 24964
+      },
+      {
+        "if_bought": "Organic Garlic",
+        "then_buy": "Organic Yellow Onion",
+        "support": 356,
+        "confidence": 0.21127596439169138,
+        "lift": 5.859011769043022,
+        "a_id": 24964,
+        "b_id": 22935
+      },
+      {
+        "if_bought": "Limes",
+        "then_buy": "Large Lemon",
+        "support": 431,
+        "confidence": 0.19743472285845168,
+        "lift": 4.163532746909567,
+        "a_id": 26209,
+        "b_id": 47626
+      },
+      {
+        "if_bought": "Large Lemon",
+        "then_buy": "Limes",
+        "support": 431,
+        "confidence": 0.1817798397300717,
+        "lift": 4.163532746909567,
+        "a_id": 47626,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Organic Hass Avocado",
+        "then_buy": "Organic Lemon",
+        "support": 369,
+        "confidence": 0.1109107303877367,
+        "lift": 3.848394531149782,
+        "a_id": 47209,
+        "b_id": 5876
+      },
+      {
+        "if_bought": "Organic Lemon",
+        "then_buy": "Organic Hass Avocado",
+        "support": 369,
+        "confidence": 0.25607217210270644,
+        "lift": 3.848394531149781,
+        "a_id": 5876,
+        "b_id": 47209
+      },
+      {
+        "if_bought": "Organic Cucumber",
+        "then_buy": "Organic Hass Avocado",
+        "support": 279,
+        "confidence": 0.2200315457413249,
+        "lift": 3.306756022562743,
+        "a_id": 30391,
+        "b_id": 47209
+      },
+      {
+        "if_bought": "Organic Hass Avocado",
+        "then_buy": "Organic Cucumber",
+        "support": 279,
+        "confidence": 0.08385933273219116,
+        "lift": 3.306756022562743,
+        "a_id": 47209,
+        "b_id": 30391
+      }
+    ],
+    "wall_s": 1.5655160000023898,
+    "peak_worker_rss_mb": 50.212864,
+    "rss_increase_mb": 14.888960000000004,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.5,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 0.9201999999932013,
+    "worker_baseline_mb": 35.422208,
+    "worker_final_mb": 48.427008,
+    "distinct_items": 29207,
+    "frequent_items": 257,
+    "pair_counters": 31308,
+    "frequent_pairs": 82,
+    "possible_all_pairs": 426509821,
+    "rules": 164,
+    "positive_rules": 162,
+    "covered_products": 34,
+    "coverage_pct": 0.06842698438254709,
+    "top_rules": [
+      {
+        "if_bought": "Limes",
+        "then_buy": "Organic Cilantro",
+        "support": 268,
+        "confidence": 0.12276683463124141,
+        "lift": 6.101731343501065,
+        "a_id": 26209,
+        "b_id": 31717
+      },
+      {
+        "if_bought": "Organic Cilantro",
+        "then_buy": "Limes",
+        "support": 268,
+        "confidence": 0.2664015904572565,
+        "lift": 6.101731343501065,
+        "a_id": 31717,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Organic Yellow Onion",
+        "then_buy": "Organic Garlic",
+        "support": 356,
+        "confidence": 0.19744869661674985,
+        "lift": 5.859011769043022,
+        "a_id": 22935,
+        "b_id": 24964
+      },
+      {
+        "if_bought": "Organic Garlic",
+        "then_buy": "Organic Yellow Onion",
+        "support": 356,
+        "confidence": 0.21127596439169138,
+        "lift": 5.859011769043022,
+        "a_id": 24964,
+        "b_id": 22935
+      },
+      {
+        "if_bought": "Limes",
+        "then_buy": "Large Lemon",
+        "support": 431,
+        "confidence": 0.19743472285845168,
+        "lift": 4.163532746909567,
+        "a_id": 26209,
+        "b_id": 47626
+      },
+      {
+        "if_bought": "Large Lemon",
+        "then_buy": "Limes",
+        "support": 431,
+        "confidence": 0.1817798397300717,
+        "lift": 4.163532746909567,
+        "a_id": 47626,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Organic Hass Avocado",
+        "then_buy": "Organic Lemon",
+        "support": 369,
+        "confidence": 0.1109107303877367,
+        "lift": 3.848394531149782,
+        "a_id": 47209,
+        "b_id": 5876
+      },
+      {
+        "if_bought": "Organic Lemon",
+        "then_buy": "Organic Hass Avocado",
+        "support": 369,
+        "confidence": 0.25607217210270644,
+        "lift": 3.848394531149781,
+        "a_id": 5876,
+        "b_id": 47209
+      },
+      {
+        "if_bought": "Organic Cucumber",
+        "then_buy": "Organic Hass Avocado",
+        "support": 279,
+        "confidence": 0.2200315457413249,
+        "lift": 3.306756022562743,
+        "a_id": 30391,
+        "b_id": 47209
+      },
+      {
+        "if_bought": "Organic Hass Avocado",
+        "then_buy": "Organic Cucumber",
+        "support": 279,
+        "confidence": 0.08385933273219116,
+        "lift": 3.306756022562743,
+        "a_id": 47209,
+        "b_id": 30391
+      }
+    ],
+    "wall_s": 1.5383956000150647,
+    "peak_worker_rss_mb": 48.427008,
+    "rss_increase_mb": 13.004800000000003,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.5,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 0.7864776999922469,
+    "worker_baseline_mb": 35.51232,
+    "worker_final_mb": 48.513024,
+    "distinct_items": 29207,
+    "frequent_items": 257,
+    "pair_counters": 31308,
+    "frequent_pairs": 82,
+    "possible_all_pairs": 426509821,
+    "rules": 164,
+    "positive_rules": 162,
+    "covered_products": 34,
+    "coverage_pct": 0.06842698438254709,
+    "top_rules": [
+      {
+        "if_bought": "Limes",
+        "then_buy": "Organic Cilantro",
+        "support": 268,
+        "confidence": 0.12276683463124141,
+        "lift": 6.101731343501065,
+        "a_id": 26209,
+        "b_id": 31717
+      },
+      {
+        "if_bought": "Organic Cilantro",
+        "then_buy": "Limes",
+        "support": 268,
+        "confidence": 0.2664015904572565,
+        "lift": 6.101731343501065,
+        "a_id": 31717,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Organic Yellow Onion",
+        "then_buy": "Organic Garlic",
+        "support": 356,
+        "confidence": 0.19744869661674985,
+        "lift": 5.859011769043022,
+        "a_id": 22935,
+        "b_id": 24964
+      },
+      {
+        "if_bought": "Organic Garlic",
+        "then_buy": "Organic Yellow Onion",
+        "support": 356,
+        "confidence": 0.21127596439169138,
+        "lift": 5.859011769043022,
+        "a_id": 24964,
+        "b_id": 22935
+      },
+      {
+        "if_bought": "Limes",
+        "then_buy": "Large Lemon",
+        "support": 431,
+        "confidence": 0.19743472285845168,
+        "lift": 4.163532746909567,
+        "a_id": 26209,
+        "b_id": 47626
+      },
+      {
+        "if_bought": "Large Lemon",
+        "then_buy": "Limes",
+        "support": 431,
+        "confidence": 0.1817798397300717,
+        "lift": 4.163532746909567,
+        "a_id": 47626,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Organic Hass Avocado",
+        "then_buy": "Organic Lemon",
+        "support": 369,
+        "confidence": 0.1109107303877367,
+        "lift": 3.848394531149782,
+        "a_id": 47209,
+        "b_id": 5876
+      },
+      {
+        "if_bought": "Organic Lemon",
+        "then_buy": "Organic Hass Avocado",
+        "support": 369,
+        "confidence": 0.25607217210270644,
+        "lift": 3.848394531149781,
+        "a_id": 5876,
+        "b_id": 47209
+      },
+      {
+        "if_bought": "Organic Cucumber",
+        "then_buy": "Organic Hass Avocado",
+        "support": 279,
+        "confidence": 0.2200315457413249,
+        "lift": 3.306756022562743,
+        "a_id": 30391,
+        "b_id": 47209
+      },
+      {
+        "if_bought": "Organic Hass Avocado",
+        "then_buy": "Organic Cucumber",
+        "support": 279,
+        "confidence": 0.08385933273219116,
+        "lift": 3.306756022562743,
+        "a_id": 47209,
+        "b_id": 30391
+      }
+    ],
+    "wall_s": 1.3295350999978837,
+    "peak_worker_rss_mb": 52.731904,
+    "rss_increase_mb": 17.219583999999998,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.5,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.2666763000015635,
+    "worker_baseline_mb": 35.528704,
+    "worker_final_mb": 48.685056,
+    "distinct_items": 29207,
+    "frequent_items": 649,
+    "pair_counters": 150137,
+    "frequent_pairs": 383,
+    "possible_all_pairs": 426509821,
+    "rules": 766,
+    "positive_rules": 754,
+    "covered_products": 98,
+    "coverage_pct": 0.19723071969087103,
+    "top_rules": [
+      {
+        "if_bought": "Total 2% with Strawberry Lowfat Greek Strained Yogurt",
+        "then_buy": "Total 2% Lowfat Greek Strained Yogurt With Blueberry",
+        "support": 130,
+        "confidence": 0.2777777777777778,
+        "lift": 44.37344692935748,
+        "a_id": 33754,
+        "b_id": 4957
+      },
+      {
+        "if_bought": "Total 2% Lowfat Greek Strained Yogurt With Blueberry",
+        "then_buy": "Total 2% with Strawberry Lowfat Greek Strained Yogurt",
+        "support": 130,
+        "confidence": 0.41533546325878595,
+        "lift": 44.37344692935747,
+        "a_id": 4957,
+        "b_id": 33754
+      },
+      {
+        "if_bought": "Sparkling Lemon Water",
+        "then_buy": "Lime Sparkling Water",
+        "support": 132,
+        "confidence": 0.24535315985130113,
+        "lift": 16.335097193828304,
+        "a_id": 21709,
+        "b_id": 35221
+      },
+      {
+        "if_bought": "Lime Sparkling Water",
+        "then_buy": "Sparkling Lemon Water",
+        "support": 132,
+        "confidence": 0.17576564580559254,
+        "lift": 16.3350971938283,
+        "a_id": 35221,
+        "b_id": 21709
+      },
+      {
+        "if_bought": "Sparkling Lemon Water",
+        "then_buy": "Sparkling Water Grapefruit",
+        "support": 156,
+        "confidence": 0.2899628252788104,
+        "lift": 11.663830461738149,
+        "a_id": 21709,
+        "b_id": 44632
+      },
+      {
+        "if_bought": "Sparkling Water Grapefruit",
+        "then_buy": "Sparkling Lemon Water",
+        "support": 156,
+        "confidence": 0.1255028157683025,
+        "lift": 11.663830461738149,
+        "a_id": 44632,
+        "b_id": 21709
+      },
+      {
+        "if_bought": "Lime Sparkling Water",
+        "then_buy": "Sparkling Water Grapefruit",
+        "support": 217,
+        "confidence": 0.28894806924101196,
+        "lift": 11.623011634795333,
+        "a_id": 35221,
+        "b_id": 44632
+      },
+      {
+        "if_bought": "Sparkling Water Grapefruit",
+        "then_buy": "Lime Sparkling Water",
+        "support": 217,
+        "confidence": 0.1745776347546259,
+        "lift": 11.623011634795333,
+        "a_id": 44632,
+        "b_id": 35221
+      },
+      {
+        "if_bought": "Bunched Cilantro",
+        "then_buy": "Limes",
+        "support": 194,
+        "confidence": 0.2823871906841339,
+        "lift": 6.4678696904290875,
+        "a_id": 28842,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Limes",
+        "then_buy": "Bunched Cilantro",
+        "support": 194,
+        "confidence": 0.08886852954649564,
+        "lift": 6.467869690429086,
+        "a_id": 26209,
+        "b_id": 28842
+      }
+    ],
+    "wall_s": 1.8480168999813031,
+    "peak_worker_rss_mb": 58.249216,
+    "rss_increase_mb": 22.720512,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.25,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.063568400015356,
+    "worker_baseline_mb": 35.393536,
+    "worker_final_mb": 48.72192,
+    "distinct_items": 29207,
+    "frequent_items": 649,
+    "pair_counters": 150137,
+    "frequent_pairs": 383,
+    "possible_all_pairs": 426509821,
+    "rules": 766,
+    "positive_rules": 754,
+    "covered_products": 98,
+    "coverage_pct": 0.19723071969087103,
+    "top_rules": [
+      {
+        "if_bought": "Total 2% with Strawberry Lowfat Greek Strained Yogurt",
+        "then_buy": "Total 2% Lowfat Greek Strained Yogurt With Blueberry",
+        "support": 130,
+        "confidence": 0.2777777777777778,
+        "lift": 44.37344692935748,
+        "a_id": 33754,
+        "b_id": 4957
+      },
+      {
+        "if_bought": "Total 2% Lowfat Greek Strained Yogurt With Blueberry",
+        "then_buy": "Total 2% with Strawberry Lowfat Greek Strained Yogurt",
+        "support": 130,
+        "confidence": 0.41533546325878595,
+        "lift": 44.37344692935747,
+        "a_id": 4957,
+        "b_id": 33754
+      },
+      {
+        "if_bought": "Sparkling Lemon Water",
+        "then_buy": "Lime Sparkling Water",
+        "support": 132,
+        "confidence": 0.24535315985130113,
+        "lift": 16.335097193828304,
+        "a_id": 21709,
+        "b_id": 35221
+      },
+      {
+        "if_bought": "Lime Sparkling Water",
+        "then_buy": "Sparkling Lemon Water",
+        "support": 132,
+        "confidence": 0.17576564580559254,
+        "lift": 16.3350971938283,
+        "a_id": 35221,
+        "b_id": 21709
+      },
+      {
+        "if_bought": "Sparkling Lemon Water",
+        "then_buy": "Sparkling Water Grapefruit",
+        "support": 156,
+        "confidence": 0.2899628252788104,
+        "lift": 11.663830461738149,
+        "a_id": 21709,
+        "b_id": 44632
+      },
+      {
+        "if_bought": "Sparkling Water Grapefruit",
+        "then_buy": "Sparkling Lemon Water",
+        "support": 156,
+        "confidence": 0.1255028157683025,
+        "lift": 11.663830461738149,
+        "a_id": 44632,
+        "b_id": 21709
+      },
+      {
+        "if_bought": "Lime Sparkling Water",
+        "then_buy": "Sparkling Water Grapefruit",
+        "support": 217,
+        "confidence": 0.28894806924101196,
+        "lift": 11.623011634795333,
+        "a_id": 35221,
+        "b_id": 44632
+      },
+      {
+        "if_bought": "Sparkling Water Grapefruit",
+        "then_buy": "Lime Sparkling Water",
+        "support": 217,
+        "confidence": 0.1745776347546259,
+        "lift": 11.623011634795333,
+        "a_id": 44632,
+        "b_id": 35221
+      },
+      {
+        "if_bought": "Bunched Cilantro",
+        "then_buy": "Limes",
+        "support": 194,
+        "confidence": 0.2823871906841339,
+        "lift": 6.4678696904290875,
+        "a_id": 28842,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Limes",
+        "then_buy": "Bunched Cilantro",
+        "support": 194,
+        "confidence": 0.08886852954649564,
+        "lift": 6.467869690429086,
+        "a_id": 26209,
+        "b_id": 28842
+      }
+    ],
+    "wall_s": 1.6649364000186324,
+    "peak_worker_rss_mb": 58.130432,
+    "rss_increase_mb": 22.736896,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.25,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.0804599999974016,
+    "worker_baseline_mb": 35.303424,
+    "worker_final_mb": 48.525312,
+    "distinct_items": 29207,
+    "frequent_items": 649,
+    "pair_counters": 150137,
+    "frequent_pairs": 383,
+    "possible_all_pairs": 426509821,
+    "rules": 766,
+    "positive_rules": 754,
+    "covered_products": 98,
+    "coverage_pct": 0.19723071969087103,
+    "top_rules": [
+      {
+        "if_bought": "Total 2% with Strawberry Lowfat Greek Strained Yogurt",
+        "then_buy": "Total 2% Lowfat Greek Strained Yogurt With Blueberry",
+        "support": 130,
+        "confidence": 0.2777777777777778,
+        "lift": 44.37344692935748,
+        "a_id": 33754,
+        "b_id": 4957
+      },
+      {
+        "if_bought": "Total 2% Lowfat Greek Strained Yogurt With Blueberry",
+        "then_buy": "Total 2% with Strawberry Lowfat Greek Strained Yogurt",
+        "support": 130,
+        "confidence": 0.41533546325878595,
+        "lift": 44.37344692935747,
+        "a_id": 4957,
+        "b_id": 33754
+      },
+      {
+        "if_bought": "Sparkling Lemon Water",
+        "then_buy": "Lime Sparkling Water",
+        "support": 132,
+        "confidence": 0.24535315985130113,
+        "lift": 16.335097193828304,
+        "a_id": 21709,
+        "b_id": 35221
+      },
+      {
+        "if_bought": "Lime Sparkling Water",
+        "then_buy": "Sparkling Lemon Water",
+        "support": 132,
+        "confidence": 0.17576564580559254,
+        "lift": 16.3350971938283,
+        "a_id": 35221,
+        "b_id": 21709
+      },
+      {
+        "if_bought": "Sparkling Lemon Water",
+        "then_buy": "Sparkling Water Grapefruit",
+        "support": 156,
+        "confidence": 0.2899628252788104,
+        "lift": 11.663830461738149,
+        "a_id": 21709,
+        "b_id": 44632
+      },
+      {
+        "if_bought": "Sparkling Water Grapefruit",
+        "then_buy": "Sparkling Lemon Water",
+        "support": 156,
+        "confidence": 0.1255028157683025,
+        "lift": 11.663830461738149,
+        "a_id": 44632,
+        "b_id": 21709
+      },
+      {
+        "if_bought": "Lime Sparkling Water",
+        "then_buy": "Sparkling Water Grapefruit",
+        "support": 217,
+        "confidence": 0.28894806924101196,
+        "lift": 11.623011634795333,
+        "a_id": 35221,
+        "b_id": 44632
+      },
+      {
+        "if_bought": "Sparkling Water Grapefruit",
+        "then_buy": "Lime Sparkling Water",
+        "support": 217,
+        "confidence": 0.1745776347546259,
+        "lift": 11.623011634795333,
+        "a_id": 44632,
+        "b_id": 35221
+      },
+      {
+        "if_bought": "Bunched Cilantro",
+        "then_buy": "Limes",
+        "support": 194,
+        "confidence": 0.2823871906841339,
+        "lift": 6.4678696904290875,
+        "a_id": 28842,
+        "b_id": 26209
+      },
+      {
+        "if_bought": "Limes",
+        "then_buy": "Bunched Cilantro",
+        "support": 194,
+        "confidence": 0.08886852954649564,
+        "lift": 6.467869690429086,
+        "a_id": 26209,
+        "b_id": 28842
+      }
+    ],
+    "wall_s": 1.626084699993953,
+    "peak_worker_rss_mb": 58.105856,
+    "rss_increase_mb": 22.802432000000003,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.25,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.6679761999985203,
+    "worker_baseline_mb": 35.47136,
+    "worker_final_mb": 54.652928,
+    "distinct_items": 29207,
+    "frequent_items": 1829,
+    "pair_counters": 545903,
+    "frequent_pairs": 1973,
+    "possible_all_pairs": 426509821,
+    "rules": 3946,
+    "positive_rules": 3876,
+    "covered_products": 344,
+    "coverage_pct": 0.6923200772822412,
+    "top_rules": [
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 57,
+        "confidence": 0.49137931034482757,
+        "lift": 225.40335336918696,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 57,
+        "confidence": 0.5229357798165137,
+        "lift": 225.40335336918696,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Kiwi Sandia Sparkling Water",
+        "then_buy": "Blackberry Cucumber Sparkling Water",
+        "support": 50,
+        "confidence": 0.33783783783783783,
+        "lift": 101.14905324486162,
+        "a_id": 12576,
+        "b_id": 39947
+      },
+      {
+        "if_bought": "Blackberry Cucumber Sparkling Water",
+        "then_buy": "Kiwi Sandia Sparkling Water",
+        "support": 50,
+        "confidence": 0.2994011976047904,
+        "lift": 101.14905324486162,
+        "a_id": 39947,
+        "b_id": 12576
+      },
+      {
+        "if_bought": "Non Fat Acai & Mixed Berries Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 59,
+        "confidence": 0.4125874125874126,
+        "lift": 75.56546018084481,
+        "a_id": 13263,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Non Fat Acai & Mixed Berries Yogurt",
+        "support": 59,
+        "confidence": 0.21611721611721613,
+        "lift": 75.5654601808448,
+        "a_id": 36865,
+        "b_id": 13263
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 77,
+        "confidence": 0.4782608695652174,
+        "lift": 74.49546254909929,
+        "a_id": 8309,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 77,
+        "confidence": 0.2398753894080997,
+        "lift": 74.49546254909927,
+        "a_id": 28465,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 62,
+        "confidence": 0.38509316770186336,
+        "lift": 70.52988419448047,
+        "a_id": 8309,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 62,
+        "confidence": 0.2271062271062271,
+        "lift": 70.52988419448046,
+        "a_id": 36865,
+        "b_id": 8309
+      }
+    ],
+    "wall_s": 2.2607169000257272,
+    "peak_worker_rss_mb": 103.694336,
+    "rss_increase_mb": 68.22297600000002,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.1,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.8166195999947377,
+    "worker_baseline_mb": 35.30752,
+    "worker_final_mb": 54.49728,
+    "distinct_items": 29207,
+    "frequent_items": 1829,
+    "pair_counters": 545903,
+    "frequent_pairs": 1973,
+    "possible_all_pairs": 426509821,
+    "rules": 3946,
+    "positive_rules": 3876,
+    "covered_products": 344,
+    "coverage_pct": 0.6923200772822412,
+    "top_rules": [
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 57,
+        "confidence": 0.49137931034482757,
+        "lift": 225.40335336918696,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 57,
+        "confidence": 0.5229357798165137,
+        "lift": 225.40335336918696,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Kiwi Sandia Sparkling Water",
+        "then_buy": "Blackberry Cucumber Sparkling Water",
+        "support": 50,
+        "confidence": 0.33783783783783783,
+        "lift": 101.14905324486162,
+        "a_id": 12576,
+        "b_id": 39947
+      },
+      {
+        "if_bought": "Blackberry Cucumber Sparkling Water",
+        "then_buy": "Kiwi Sandia Sparkling Water",
+        "support": 50,
+        "confidence": 0.2994011976047904,
+        "lift": 101.14905324486162,
+        "a_id": 39947,
+        "b_id": 12576
+      },
+      {
+        "if_bought": "Non Fat Acai & Mixed Berries Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 59,
+        "confidence": 0.4125874125874126,
+        "lift": 75.56546018084481,
+        "a_id": 13263,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Non Fat Acai & Mixed Berries Yogurt",
+        "support": 59,
+        "confidence": 0.21611721611721613,
+        "lift": 75.5654601808448,
+        "a_id": 36865,
+        "b_id": 13263
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 77,
+        "confidence": 0.4782608695652174,
+        "lift": 74.49546254909929,
+        "a_id": 8309,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 77,
+        "confidence": 0.2398753894080997,
+        "lift": 74.49546254909927,
+        "a_id": 28465,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 62,
+        "confidence": 0.38509316770186336,
+        "lift": 70.52988419448047,
+        "a_id": 8309,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 62,
+        "confidence": 0.2271062271062271,
+        "lift": 70.52988419448046,
+        "a_id": 36865,
+        "b_id": 8309
+      }
+    ],
+    "wall_s": 2.4229278000129852,
+    "peak_worker_rss_mb": 103.54688,
+    "rss_increase_mb": 68.23936,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.1,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.6052857000031509,
+    "worker_baseline_mb": 35.356672,
+    "worker_final_mb": 54.591488,
+    "distinct_items": 29207,
+    "frequent_items": 1829,
+    "pair_counters": 545903,
+    "frequent_pairs": 1973,
+    "possible_all_pairs": 426509821,
+    "rules": 3946,
+    "positive_rules": 3876,
+    "covered_products": 344,
+    "coverage_pct": 0.6923200772822412,
+    "top_rules": [
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 57,
+        "confidence": 0.49137931034482757,
+        "lift": 225.40335336918696,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 57,
+        "confidence": 0.5229357798165137,
+        "lift": 225.40335336918696,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Kiwi Sandia Sparkling Water",
+        "then_buy": "Blackberry Cucumber Sparkling Water",
+        "support": 50,
+        "confidence": 0.33783783783783783,
+        "lift": 101.14905324486162,
+        "a_id": 12576,
+        "b_id": 39947
+      },
+      {
+        "if_bought": "Blackberry Cucumber Sparkling Water",
+        "then_buy": "Kiwi Sandia Sparkling Water",
+        "support": 50,
+        "confidence": 0.2994011976047904,
+        "lift": 101.14905324486162,
+        "a_id": 39947,
+        "b_id": 12576
+      },
+      {
+        "if_bought": "Non Fat Acai & Mixed Berries Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 59,
+        "confidence": 0.4125874125874126,
+        "lift": 75.56546018084481,
+        "a_id": 13263,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Non Fat Acai & Mixed Berries Yogurt",
+        "support": 59,
+        "confidence": 0.21611721611721613,
+        "lift": 75.5654601808448,
+        "a_id": 36865,
+        "b_id": 13263
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 77,
+        "confidence": 0.4782608695652174,
+        "lift": 74.49546254909929,
+        "a_id": 8309,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 77,
+        "confidence": 0.2398753894080997,
+        "lift": 74.49546254909927,
+        "a_id": 28465,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 62,
+        "confidence": 0.38509316770186336,
+        "lift": 70.52988419448047,
+        "a_id": 8309,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 62,
+        "confidence": 0.2271062271062271,
+        "lift": 70.52988419448046,
+        "a_id": 36865,
+        "b_id": 8309
+      }
+    ],
+    "wall_s": 2.215127900009975,
+    "peak_worker_rss_mb": 103.604224,
+    "rss_increase_mb": 68.247552,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.1,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.89473500000895,
+    "worker_baseline_mb": 35.291136,
+    "worker_final_mb": 59.092992,
+    "distinct_items": 29207,
+    "frequent_items": 2404,
+    "pair_counters": 713906,
+    "frequent_pairs": 3152,
+    "possible_all_pairs": 426509821,
+    "rules": 6304,
+    "positive_rules": 6170,
+    "covered_products": 490,
+    "coverage_pct": 0.9861535984543551,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 46,
+        "confidence": 0.4842105263157895,
+        "lift": 331.65104542177363,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 46,
+        "confidence": 0.6301369863013698,
+        "lift": 331.6510454217736,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 42,
+        "confidence": 0.4117647058823529,
+        "lift": 282.03062046736505,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 42,
+        "confidence": 0.5753424657534246,
+        "lift": 282.030620467365,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 47,
+        "confidence": 0.49473684210526314,
+        "lift": 242.51805985552113,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 47,
+        "confidence": 0.46078431372549017,
+        "lift": 242.51805985552113,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 57,
+        "confidence": 0.49137931034482757,
+        "lift": 225.40335336918696,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 57,
+        "confidence": 0.5229357798165137,
+        "lift": 225.40335336918696,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Vanilla Almond Milk Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 40,
+        "confidence": 0.39603960396039606,
+        "lift": 194.1370607649,
+        "a_id": 31635,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Vanilla Almond Milk Yogurt",
+        "support": 40,
+        "confidence": 0.39215686274509803,
+        "lift": 194.1370607649,
+        "a_id": 38312,
+        "b_id": 31635
+      }
+    ],
+    "wall_s": 2.5113293000031263,
+    "peak_worker_rss_mb": 156.192768,
+    "rss_increase_mb": 120.901632,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.075,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 1.8038755000161473,
+    "worker_baseline_mb": 35.418112,
+    "worker_final_mb": 59.039744,
+    "distinct_items": 29207,
+    "frequent_items": 2404,
+    "pair_counters": 713906,
+    "frequent_pairs": 3152,
+    "possible_all_pairs": 426509821,
+    "rules": 6304,
+    "positive_rules": 6170,
+    "covered_products": 490,
+    "coverage_pct": 0.9861535984543551,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 46,
+        "confidence": 0.4842105263157895,
+        "lift": 331.65104542177363,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 46,
+        "confidence": 0.6301369863013698,
+        "lift": 331.6510454217736,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 42,
+        "confidence": 0.4117647058823529,
+        "lift": 282.03062046736505,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 42,
+        "confidence": 0.5753424657534246,
+        "lift": 282.030620467365,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 47,
+        "confidence": 0.49473684210526314,
+        "lift": 242.51805985552113,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 47,
+        "confidence": 0.46078431372549017,
+        "lift": 242.51805985552113,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 57,
+        "confidence": 0.49137931034482757,
+        "lift": 225.40335336918696,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 57,
+        "confidence": 0.5229357798165137,
+        "lift": 225.40335336918696,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Vanilla Almond Milk Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 40,
+        "confidence": 0.39603960396039606,
+        "lift": 194.1370607649,
+        "a_id": 31635,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Vanilla Almond Milk Yogurt",
+        "support": 40,
+        "confidence": 0.39215686274509803,
+        "lift": 194.1370607649,
+        "a_id": 38312,
+        "b_id": 31635
+      }
+    ],
+    "wall_s": 2.415199199982453,
+    "peak_worker_rss_mb": 156.209152,
+    "rss_increase_mb": 120.79103999999998,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.075,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 2.03382879999117,
+    "worker_baseline_mb": 35.393536,
+    "worker_final_mb": 59.22816,
+    "distinct_items": 29207,
+    "frequent_items": 2404,
+    "pair_counters": 713906,
+    "frequent_pairs": 3152,
+    "possible_all_pairs": 426509821,
+    "rules": 6304,
+    "positive_rules": 6170,
+    "covered_products": 490,
+    "coverage_pct": 0.9861535984543551,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 46,
+        "confidence": 0.4842105263157895,
+        "lift": 331.65104542177363,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 46,
+        "confidence": 0.6301369863013698,
+        "lift": 331.6510454217736,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 42,
+        "confidence": 0.4117647058823529,
+        "lift": 282.03062046736505,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 42,
+        "confidence": 0.5753424657534246,
+        "lift": 282.030620467365,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 47,
+        "confidence": 0.49473684210526314,
+        "lift": 242.51805985552113,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 47,
+        "confidence": 0.46078431372549017,
+        "lift": 242.51805985552113,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 57,
+        "confidence": 0.49137931034482757,
+        "lift": 225.40335336918696,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 57,
+        "confidence": 0.5229357798165137,
+        "lift": 225.40335336918696,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Vanilla Almond Milk Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 40,
+        "confidence": 0.39603960396039606,
+        "lift": 194.1370607649,
+        "a_id": 31635,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Vanilla Almond Milk Yogurt",
+        "support": 40,
+        "confidence": 0.39215686274509803,
+        "lift": 194.1370607649,
+        "a_id": 38312,
+        "b_id": 31635
+      }
+    ],
+    "wall_s": 2.66771300000255,
+    "peak_worker_rss_mb": 156.28288,
+    "rss_increase_mb": 120.88934400000001,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.075,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 2.2178077999851666,
+    "worker_baseline_mb": 35.254272,
+    "worker_final_mb": 72.327168,
+    "distinct_items": 29207,
+    "frequent_items": 3505,
+    "pair_counters": 980774,
+    "frequent_pairs": 6094,
+    "possible_all_pairs": 426509821,
+    "rules": 12188,
+    "positive_rules": 11906,
+    "covered_products": 834,
+    "coverage_pct": 1.6784736757365963,
+    "top_rules": [
+      {
+        "if_bought": "Raspberry Essence Water",
+        "then_buy": "Unsweetened Blackberry Water",
+        "support": 28,
+        "confidence": 0.6829268292682927,
+        "lift": 494.874513962531,
+        "a_id": 49519,
+        "b_id": 10339
+      },
+      {
+        "if_bought": "Unsweetened Blackberry Water",
+        "then_buy": "Raspberry Essence Water",
+        "support": 28,
+        "confidence": 0.4057971014492754,
+        "lift": 494.87451396253095,
+        "a_id": 10339,
+        "b_id": 49519
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Acai Berry Chia Bar",
+        "support": 29,
+        "confidence": 0.3670886075949367,
+        "lift": 346.3100071650347,
+        "a_id": 23291,
+        "b_id": 33929
+      },
+      {
+        "if_bought": "Acai Berry Chia Bar",
+        "then_buy": "Coconut Chia Bar",
+        "support": 29,
+        "confidence": 0.5471698113207547,
+        "lift": 346.3100071650346,
+        "a_id": 33929,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 46,
+        "confidence": 0.4842105263157895,
+        "lift": 331.65104542177363,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 46,
+        "confidence": 0.6301369863013698,
+        "lift": 331.6510454217736,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 36,
+        "confidence": 0.46153846153846156,
+        "lift": 292.1129503407985,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 36,
+        "confidence": 0.45569620253164556,
+        "lift": 292.1129503407984,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 42,
+        "confidence": 0.4117647058823529,
+        "lift": 282.03062046736505,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 42,
+        "confidence": 0.5753424657534246,
+        "lift": 282.030620467365,
+        "a_id": 48220,
+        "b_id": 38312
+      }
+    ],
+    "wall_s": 2.880527000001166,
+    "peak_worker_rss_mb": 155.615232,
+    "rss_increase_mb": 120.36095999999999,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.05,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 2.1839258999971207,
+    "worker_baseline_mb": 35.467264,
+    "worker_final_mb": 72.511488,
+    "distinct_items": 29207,
+    "frequent_items": 3505,
+    "pair_counters": 980774,
+    "frequent_pairs": 6094,
+    "possible_all_pairs": 426509821,
+    "rules": 12188,
+    "positive_rules": 11906,
+    "covered_products": 834,
+    "coverage_pct": 1.6784736757365963,
+    "top_rules": [
+      {
+        "if_bought": "Raspberry Essence Water",
+        "then_buy": "Unsweetened Blackberry Water",
+        "support": 28,
+        "confidence": 0.6829268292682927,
+        "lift": 494.874513962531,
+        "a_id": 49519,
+        "b_id": 10339
+      },
+      {
+        "if_bought": "Unsweetened Blackberry Water",
+        "then_buy": "Raspberry Essence Water",
+        "support": 28,
+        "confidence": 0.4057971014492754,
+        "lift": 494.87451396253095,
+        "a_id": 10339,
+        "b_id": 49519
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Acai Berry Chia Bar",
+        "support": 29,
+        "confidence": 0.3670886075949367,
+        "lift": 346.3100071650347,
+        "a_id": 23291,
+        "b_id": 33929
+      },
+      {
+        "if_bought": "Acai Berry Chia Bar",
+        "then_buy": "Coconut Chia Bar",
+        "support": 29,
+        "confidence": 0.5471698113207547,
+        "lift": 346.3100071650346,
+        "a_id": 33929,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 46,
+        "confidence": 0.4842105263157895,
+        "lift": 331.65104542177363,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 46,
+        "confidence": 0.6301369863013698,
+        "lift": 331.6510454217736,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 36,
+        "confidence": 0.46153846153846156,
+        "lift": 292.1129503407985,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 36,
+        "confidence": 0.45569620253164556,
+        "lift": 292.1129503407984,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 42,
+        "confidence": 0.4117647058823529,
+        "lift": 282.03062046736505,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 42,
+        "confidence": 0.5753424657534246,
+        "lift": 282.030620467365,
+        "a_id": 48220,
+        "b_id": 38312
+      }
+    ],
+    "wall_s": 2.886289799993392,
+    "peak_worker_rss_mb": 155.762688,
+    "rss_increase_mb": 120.295424,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.05,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 2.2691944999969564,
+    "worker_baseline_mb": 35.61472,
+    "worker_final_mb": 72.675328,
+    "distinct_items": 29207,
+    "frequent_items": 3505,
+    "pair_counters": 980774,
+    "frequent_pairs": 6094,
+    "possible_all_pairs": 426509821,
+    "rules": 12188,
+    "positive_rules": 11906,
+    "covered_products": 834,
+    "coverage_pct": 1.6784736757365963,
+    "top_rules": [
+      {
+        "if_bought": "Raspberry Essence Water",
+        "then_buy": "Unsweetened Blackberry Water",
+        "support": 28,
+        "confidence": 0.6829268292682927,
+        "lift": 494.874513962531,
+        "a_id": 49519,
+        "b_id": 10339
+      },
+      {
+        "if_bought": "Unsweetened Blackberry Water",
+        "then_buy": "Raspberry Essence Water",
+        "support": 28,
+        "confidence": 0.4057971014492754,
+        "lift": 494.87451396253095,
+        "a_id": 10339,
+        "b_id": 49519
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Acai Berry Chia Bar",
+        "support": 29,
+        "confidence": 0.3670886075949367,
+        "lift": 346.3100071650347,
+        "a_id": 23291,
+        "b_id": 33929
+      },
+      {
+        "if_bought": "Acai Berry Chia Bar",
+        "then_buy": "Coconut Chia Bar",
+        "support": 29,
+        "confidence": 0.5471698113207547,
+        "lift": 346.3100071650346,
+        "a_id": 33929,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 46,
+        "confidence": 0.4842105263157895,
+        "lift": 331.65104542177363,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 46,
+        "confidence": 0.6301369863013698,
+        "lift": 331.6510454217736,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 36,
+        "confidence": 0.46153846153846156,
+        "lift": 292.1129503407985,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 36,
+        "confidence": 0.45569620253164556,
+        "lift": 292.1129503407984,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 42,
+        "confidence": 0.4117647058823529,
+        "lift": 282.03062046736505,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 42,
+        "confidence": 0.5753424657534246,
+        "lift": 282.030620467365,
+        "a_id": 48220,
+        "b_id": 38312
+      }
+    ],
+    "wall_s": 2.9738402999937534,
+    "peak_worker_rss_mb": 155.942912,
+    "rss_increase_mb": 120.328192,
+    "stage": "sample_1",
+    "baskets": 50000,
+    "support_pct": 0.05,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 13.209396399994148,
+    "worker_baseline_mb": 35.393536,
+    "worker_final_mb": 90.37824,
+    "distinct_items": 42086,
+    "frequent_items": 3411,
+    "pair_counters": 2303378,
+    "frequent_pairs": 5806,
+    "possible_all_pairs": 885594655,
+    "rules": 11612,
+    "positive_rules": 11360,
+    "covered_products": 768,
+    "coverage_pct": 1.5456448236998872,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 172,
+        "confidence": 0.48179271708683474,
+        "lift": 329.9950117033115,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 172,
+        "confidence": 0.4712328767123288,
+        "lift": 329.9950117033115,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 204,
+        "confidence": 0.5714285714285714,
+        "lift": 306.5603923973023,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 204,
+        "confidence": 0.43776824034334766,
+        "lift": 306.5603923973023,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 150,
+        "confidence": 0.40214477211796246,
+        "lift": 298.32698228335494,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 150,
+        "confidence": 0.44510385756676557,
+        "lift": 298.32698228335494,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 181,
+        "confidence": 0.388412017167382,
+        "lift": 266.035628196837,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 181,
+        "confidence": 0.4958904109589041,
+        "lift": 266.03562819683697,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 218,
+        "confidence": 0.47186147186147187,
+        "lift": 234.52359436454864,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 218,
+        "confidence": 0.43339960238568587,
+        "lift": 234.52359436454861,
+        "a_id": 38544,
+        "b_id": 4962
+      }
+    ],
+    "wall_s": 13.955435700016096,
+    "peak_worker_rss_mb": 318.44352,
+    "rss_increase_mb": 283.049984,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.05,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 12.670389100007014,
+    "worker_baseline_mb": 35.51232,
+    "worker_final_mb": 90.484736,
+    "distinct_items": 42086,
+    "frequent_items": 3411,
+    "pair_counters": 2303378,
+    "frequent_pairs": 5806,
+    "possible_all_pairs": 885594655,
+    "rules": 11612,
+    "positive_rules": 11360,
+    "covered_products": 768,
+    "coverage_pct": 1.5456448236998872,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 172,
+        "confidence": 0.48179271708683474,
+        "lift": 329.9950117033115,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 172,
+        "confidence": 0.4712328767123288,
+        "lift": 329.9950117033115,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 204,
+        "confidence": 0.5714285714285714,
+        "lift": 306.5603923973023,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 204,
+        "confidence": 0.43776824034334766,
+        "lift": 306.5603923973023,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 150,
+        "confidence": 0.40214477211796246,
+        "lift": 298.32698228335494,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 150,
+        "confidence": 0.44510385756676557,
+        "lift": 298.32698228335494,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 181,
+        "confidence": 0.388412017167382,
+        "lift": 266.035628196837,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 181,
+        "confidence": 0.4958904109589041,
+        "lift": 266.03562819683697,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 218,
+        "confidence": 0.47186147186147187,
+        "lift": 234.52359436454864,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 218,
+        "confidence": 0.43339960238568587,
+        "lift": 234.52359436454861,
+        "a_id": 38544,
+        "b_id": 4962
+      }
+    ],
+    "wall_s": 13.328631900018081,
+    "peak_worker_rss_mb": 318.468096,
+    "rss_increase_mb": 282.955776,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.05,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 12.85061080000014,
+    "worker_baseline_mb": 35.549184,
+    "worker_final_mb": 90.513408,
+    "distinct_items": 42086,
+    "frequent_items": 3411,
+    "pair_counters": 2303378,
+    "frequent_pairs": 5806,
+    "possible_all_pairs": 885594655,
+    "rules": 11612,
+    "positive_rules": 11360,
+    "covered_products": 768,
+    "coverage_pct": 1.5456448236998872,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 172,
+        "confidence": 0.48179271708683474,
+        "lift": 329.9950117033115,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 172,
+        "confidence": 0.4712328767123288,
+        "lift": 329.9950117033115,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 204,
+        "confidence": 0.5714285714285714,
+        "lift": 306.5603923973023,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 204,
+        "confidence": 0.43776824034334766,
+        "lift": 306.5603923973023,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 150,
+        "confidence": 0.40214477211796246,
+        "lift": 298.32698228335494,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 150,
+        "confidence": 0.44510385756676557,
+        "lift": 298.32698228335494,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 181,
+        "confidence": 0.388412017167382,
+        "lift": 266.035628196837,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 181,
+        "confidence": 0.4958904109589041,
+        "lift": 266.03562819683697,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 218,
+        "confidence": 0.47186147186147187,
+        "lift": 234.52359436454864,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 218,
+        "confidence": 0.43339960238568587,
+        "lift": 234.52359436454861,
+        "a_id": 38544,
+        "b_id": 4962
+      }
+    ],
+    "wall_s": 13.549513400008436,
+    "peak_worker_rss_mb": 318.488576,
+    "rss_increase_mb": 282.939392,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.05,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 10.994483100017533,
+    "worker_baseline_mb": 35.385344,
+    "worker_final_mb": 76.341248,
+    "distinct_items": 42086,
+    "frequent_items": 2360,
+    "pair_counters": 1501214,
+    "frequent_pairs": 3051,
+    "possible_all_pairs": 885594655,
+    "rules": 6102,
+    "positive_rules": 5984,
+    "covered_products": 461,
+    "coverage_pct": 0.9277894058927709,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 204,
+        "confidence": 0.5714285714285714,
+        "lift": 306.5603923973023,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 204,
+        "confidence": 0.43776824034334766,
+        "lift": 306.5603923973023,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 218,
+        "confidence": 0.47186147186147187,
+        "lift": 234.52359436454864,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 218,
+        "confidence": 0.43339960238568587,
+        "lift": 234.52359436454861,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 202,
+        "confidence": 0.42171189979123175,
+        "lift": 178.38912850728923,
+        "a_id": 23296,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "support": 202,
+        "confidence": 0.34179357021996615,
+        "lift": 178.38912850728923,
+        "a_id": 44156,
+        "b_id": 23296
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Peach on the Bottom Nonfat Greek Yogurt",
+        "support": 199,
+        "confidence": 0.33671742808798644,
+        "lift": 136.2125518155285,
+        "a_id": 44156,
+        "b_id": 33548
+      },
+      {
+        "if_bought": "Peach on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 199,
+        "confidence": 0.3220064724919094,
+        "lift": 136.21255181552849,
+        "a_id": 33548,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Raspberry Yoghurt",
+        "then_buy": "Blueberry Yoghurt",
+        "support": 249,
+        "confidence": 0.3710879284649776,
+        "lift": 115.82020239231512,
+        "a_id": 46886,
+        "b_id": 40198
+      },
+      {
+        "if_bought": "Blueberry Yoghurt",
+        "then_buy": "Raspberry Yoghurt",
+        "support": 249,
+        "confidence": 0.31086142322097376,
+        "lift": 115.82020239231511,
+        "a_id": 40198,
+        "b_id": 46886
+      }
+    ],
+    "wall_s": 11.63595249998616,
+    "peak_worker_rss_mb": 290.234368,
+    "rss_increase_mb": 254.84902400000001,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.075,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 11.277394499978982,
+    "worker_baseline_mb": 35.34848,
+    "worker_final_mb": 76.189696,
+    "distinct_items": 42086,
+    "frequent_items": 2360,
+    "pair_counters": 1501214,
+    "frequent_pairs": 3051,
+    "possible_all_pairs": 885594655,
+    "rules": 6102,
+    "positive_rules": 5984,
+    "covered_products": 461,
+    "coverage_pct": 0.9277894058927709,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 204,
+        "confidence": 0.5714285714285714,
+        "lift": 306.5603923973023,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 204,
+        "confidence": 0.43776824034334766,
+        "lift": 306.5603923973023,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 218,
+        "confidence": 0.47186147186147187,
+        "lift": 234.52359436454864,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 218,
+        "confidence": 0.43339960238568587,
+        "lift": 234.52359436454861,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 202,
+        "confidence": 0.42171189979123175,
+        "lift": 178.38912850728923,
+        "a_id": 23296,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "support": 202,
+        "confidence": 0.34179357021996615,
+        "lift": 178.38912850728923,
+        "a_id": 44156,
+        "b_id": 23296
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Peach on the Bottom Nonfat Greek Yogurt",
+        "support": 199,
+        "confidence": 0.33671742808798644,
+        "lift": 136.2125518155285,
+        "a_id": 44156,
+        "b_id": 33548
+      },
+      {
+        "if_bought": "Peach on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 199,
+        "confidence": 0.3220064724919094,
+        "lift": 136.21255181552849,
+        "a_id": 33548,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Raspberry Yoghurt",
+        "then_buy": "Blueberry Yoghurt",
+        "support": 249,
+        "confidence": 0.3710879284649776,
+        "lift": 115.82020239231512,
+        "a_id": 46886,
+        "b_id": 40198
+      },
+      {
+        "if_bought": "Blueberry Yoghurt",
+        "then_buy": "Raspberry Yoghurt",
+        "support": 249,
+        "confidence": 0.31086142322097376,
+        "lift": 115.82020239231511,
+        "a_id": 40198,
+        "b_id": 46886
+      }
+    ],
+    "wall_s": 11.890587400004733,
+    "peak_worker_rss_mb": 290.148352,
+    "rss_increase_mb": 254.799872,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.075,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 10.656408600014402,
+    "worker_baseline_mb": 35.323904,
+    "worker_final_mb": 76.283904,
+    "distinct_items": 42086,
+    "frequent_items": 2360,
+    "pair_counters": 1501214,
+    "frequent_pairs": 3051,
+    "possible_all_pairs": 885594655,
+    "rules": 6102,
+    "positive_rules": 5984,
+    "covered_products": 461,
+    "coverage_pct": 0.9277894058927709,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 204,
+        "confidence": 0.5714285714285714,
+        "lift": 306.5603923973023,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 204,
+        "confidence": 0.43776824034334766,
+        "lift": 306.5603923973023,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 218,
+        "confidence": 0.47186147186147187,
+        "lift": 234.52359436454864,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 218,
+        "confidence": 0.43339960238568587,
+        "lift": 234.52359436454861,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 202,
+        "confidence": 0.42171189979123175,
+        "lift": 178.38912850728923,
+        "a_id": 23296,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "support": 202,
+        "confidence": 0.34179357021996615,
+        "lift": 178.38912850728923,
+        "a_id": 44156,
+        "b_id": 23296
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Peach on the Bottom Nonfat Greek Yogurt",
+        "support": 199,
+        "confidence": 0.33671742808798644,
+        "lift": 136.2125518155285,
+        "a_id": 44156,
+        "b_id": 33548
+      },
+      {
+        "if_bought": "Peach on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 199,
+        "confidence": 0.3220064724919094,
+        "lift": 136.21255181552849,
+        "a_id": 33548,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Raspberry Yoghurt",
+        "then_buy": "Blueberry Yoghurt",
+        "support": 249,
+        "confidence": 0.3710879284649776,
+        "lift": 115.82020239231512,
+        "a_id": 46886,
+        "b_id": 40198
+      },
+      {
+        "if_bought": "Blueberry Yoghurt",
+        "then_buy": "Raspberry Yoghurt",
+        "support": 249,
+        "confidence": 0.31086142322097376,
+        "lift": 115.82020239231511,
+        "a_id": 40198,
+        "b_id": 46886
+      }
+    ],
+    "wall_s": 11.280957400012994,
+    "peak_worker_rss_mb": 290.111488,
+    "rss_increase_mb": 254.787584,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.075,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 9.486537299992051,
+    "worker_baseline_mb": 35.319808,
+    "worker_final_mb": 68.579328,
+    "distinct_items": 42086,
+    "frequent_items": 1774,
+    "pair_counters": 1019315,
+    "frequent_pairs": 1917,
+    "possible_all_pairs": 885594655,
+    "rules": 3834,
+    "positive_rules": 3790,
+    "covered_products": 318,
+    "coverage_pct": 0.6399935598132346,
+    "top_rules": [
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 580,
+        "confidence": 0.38309114927344784,
+        "lift": 75.76961022022307,
+        "a_id": 28465,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 580,
+        "confidence": 0.4588607594936709,
+        "lift": 75.76961022022307,
+        "a_id": 36865,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Non Fat Acai & Mixed Berries Yogurt",
+        "support": 280,
+        "confidence": 0.18494055482166447,
+        "lift": 73.740253118686,
+        "a_id": 28465,
+        "b_id": 13263
+      },
+      {
+        "if_bought": "Non Fat Acai & Mixed Berries Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 280,
+        "confidence": 0.44657097288676234,
+        "lift": 73.74025311868598,
+        "a_id": 13263,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 345,
+        "confidence": 0.42124542124542125,
+        "lift": 69.55835885822677,
+        "a_id": 8309,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 345,
+        "confidence": 0.22787318361955086,
+        "lift": 69.55835885822677,
+        "a_id": 28465,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 281,
+        "confidence": 0.3431013431013431,
+        "lift": 67.86023399947452,
+        "a_id": 8309,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 281,
+        "confidence": 0.22231012658227847,
+        "lift": 67.8602339994745,
+        "a_id": 36865,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Vanilla Skyr Nonfat Yogurt",
+        "support": 296,
+        "confidence": 0.3614163614163614,
+        "lift": 64.44656943943677,
+        "a_id": 8309,
+        "b_id": 24799
+      },
+      {
+        "if_bought": "Vanilla Skyr Nonfat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 296,
+        "confidence": 0.21112696148359486,
+        "lift": 64.44656943943677,
+        "a_id": 24799,
+        "b_id": 8309
+      }
+    ],
+    "wall_s": 10.068648900021799,
+    "peak_worker_rss_mb": 178.839552,
+    "rss_increase_mb": 143.519744,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.1,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 9.597083999979077,
+    "worker_baseline_mb": 35.323904,
+    "worker_final_mb": 68.591616,
+    "distinct_items": 42086,
+    "frequent_items": 1774,
+    "pair_counters": 1019315,
+    "frequent_pairs": 1917,
+    "possible_all_pairs": 885594655,
+    "rules": 3834,
+    "positive_rules": 3790,
+    "covered_products": 318,
+    "coverage_pct": 0.6399935598132346,
+    "top_rules": [
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 580,
+        "confidence": 0.38309114927344784,
+        "lift": 75.76961022022307,
+        "a_id": 28465,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 580,
+        "confidence": 0.4588607594936709,
+        "lift": 75.76961022022307,
+        "a_id": 36865,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Non Fat Acai & Mixed Berries Yogurt",
+        "support": 280,
+        "confidence": 0.18494055482166447,
+        "lift": 73.740253118686,
+        "a_id": 28465,
+        "b_id": 13263
+      },
+      {
+        "if_bought": "Non Fat Acai & Mixed Berries Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 280,
+        "confidence": 0.44657097288676234,
+        "lift": 73.74025311868598,
+        "a_id": 13263,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 345,
+        "confidence": 0.42124542124542125,
+        "lift": 69.55835885822677,
+        "a_id": 8309,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 345,
+        "confidence": 0.22787318361955086,
+        "lift": 69.55835885822677,
+        "a_id": 28465,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 281,
+        "confidence": 0.3431013431013431,
+        "lift": 67.86023399947452,
+        "a_id": 8309,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 281,
+        "confidence": 0.22231012658227847,
+        "lift": 67.8602339994745,
+        "a_id": 36865,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Vanilla Skyr Nonfat Yogurt",
+        "support": 296,
+        "confidence": 0.3614163614163614,
+        "lift": 64.44656943943677,
+        "a_id": 8309,
+        "b_id": 24799
+      },
+      {
+        "if_bought": "Vanilla Skyr Nonfat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 296,
+        "confidence": 0.21112696148359486,
+        "lift": 64.44656943943677,
+        "a_id": 24799,
+        "b_id": 8309
+      }
+    ],
+    "wall_s": 10.18307180001284,
+    "peak_worker_rss_mb": 178.855936,
+    "rss_increase_mb": 143.53203200000002,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.1,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 9.207386599999154,
+    "worker_baseline_mb": 35.336192,
+    "worker_final_mb": 68.542464,
+    "distinct_items": 42086,
+    "frequent_items": 1774,
+    "pair_counters": 1019315,
+    "frequent_pairs": 1917,
+    "possible_all_pairs": 885594655,
+    "rules": 3834,
+    "positive_rules": 3790,
+    "covered_products": 318,
+    "coverage_pct": 0.6399935598132346,
+    "top_rules": [
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 580,
+        "confidence": 0.38309114927344784,
+        "lift": 75.76961022022307,
+        "a_id": 28465,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 580,
+        "confidence": 0.4588607594936709,
+        "lift": 75.76961022022307,
+        "a_id": 36865,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Non Fat Acai & Mixed Berries Yogurt",
+        "support": 280,
+        "confidence": 0.18494055482166447,
+        "lift": 73.740253118686,
+        "a_id": 28465,
+        "b_id": 13263
+      },
+      {
+        "if_bought": "Non Fat Acai & Mixed Berries Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 280,
+        "confidence": 0.44657097288676234,
+        "lift": 73.74025311868598,
+        "a_id": 13263,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "support": 345,
+        "confidence": 0.42124542124542125,
+        "lift": 69.55835885822677,
+        "a_id": 8309,
+        "b_id": 28465
+      },
+      {
+        "if_bought": "Icelandic Style Skyr Blueberry Non-fat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 345,
+        "confidence": 0.22787318361955086,
+        "lift": 69.55835885822677,
+        "a_id": 28465,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Non Fat Raspberry Yogurt",
+        "support": 281,
+        "confidence": 0.3431013431013431,
+        "lift": 67.86023399947452,
+        "a_id": 8309,
+        "b_id": 36865
+      },
+      {
+        "if_bought": "Non Fat Raspberry Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 281,
+        "confidence": 0.22231012658227847,
+        "lift": 67.8602339994745,
+        "a_id": 36865,
+        "b_id": 8309
+      },
+      {
+        "if_bought": "Nonfat Icelandic Style Strawberry Yogurt",
+        "then_buy": "Vanilla Skyr Nonfat Yogurt",
+        "support": 296,
+        "confidence": 0.3614163614163614,
+        "lift": 64.44656943943677,
+        "a_id": 8309,
+        "b_id": 24799
+      },
+      {
+        "if_bought": "Vanilla Skyr Nonfat Yogurt",
+        "then_buy": "Nonfat Icelandic Style Strawberry Yogurt",
+        "support": 296,
+        "confidence": 0.21112696148359486,
+        "lift": 64.44656943943677,
+        "a_id": 24799,
+        "b_id": 8309
+      }
+    ],
+    "wall_s": 9.779557900008513,
+    "peak_worker_rss_mb": 178.835456,
+    "rss_increase_mb": 143.49926399999998,
+    "stage": "sample_2",
+    "baskets": 250000,
+    "support_pct": 0.1,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 175.7721172000165,
+    "worker_baseline_mb": 35.373056,
+    "worker_final_mb": 268.500992,
+    "distinct_items": 49677,
+    "frequent_items": 3402,
+    "pair_counters": 4538892,
+    "frequent_pairs": 5706,
+    "possible_all_pairs": 1233877326,
+    "rules": 11412,
+    "positive_rules": 11192,
+    "covered_products": 763,
+    "coverage_pct": 1.5355820318789244,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2260,
+        "confidence": 0.47921967769296014,
+        "lift": 327.30632719428036,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2260,
+        "confidence": 0.4801359677076694,
+        "lift": 327.3063271942803,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2702,
+        "confidence": 0.5729431721798134,
+        "lift": 322.07380795915464,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2702,
+        "confidence": 0.4724602203182375,
+        "lift": 322.07380795915464,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2477,
+        "confidence": 0.43311767791571953,
+        "lift": 295.81872990686657,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2477,
+        "confidence": 0.526237518589335,
+        "lift": 295.81872990686657,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 1870,
+        "confidence": 0.40154605969508267,
+        "lift": 277.1999113412431,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 1870,
+        "confidence": 0.40154605969508267,
+        "lift": 277.1999113412431,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 2823,
+        "confidence": 0.4608979591836735,
+        "lift": 235.90652215135378,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 2823,
+        "confidence": 0.44945072440694156,
+        "lift": 235.90652215135376,
+        "a_id": 38544,
+        "b_id": 4962
+      }
+    ],
+    "wall_s": 176.47324130000197,
+    "peak_worker_rss_mb": 775.073792,
+    "rss_increase_mb": 739.700736,
+    "stage": "full",
+    "baskets": 3214874,
+    "support_pct": 0.05,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 178.61911619998864,
+    "worker_baseline_mb": 35.479552,
+    "worker_final_mb": 267.93984,
+    "distinct_items": 49677,
+    "frequent_items": 3402,
+    "pair_counters": 4538892,
+    "frequent_pairs": 5706,
+    "possible_all_pairs": 1233877326,
+    "rules": 11412,
+    "positive_rules": 11192,
+    "covered_products": 763,
+    "coverage_pct": 1.5355820318789244,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2260,
+        "confidence": 0.47921967769296014,
+        "lift": 327.30632719428036,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2260,
+        "confidence": 0.4801359677076694,
+        "lift": 327.3063271942803,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2702,
+        "confidence": 0.5729431721798134,
+        "lift": 322.07380795915464,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2702,
+        "confidence": 0.4724602203182375,
+        "lift": 322.07380795915464,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2477,
+        "confidence": 0.43311767791571953,
+        "lift": 295.81872990686657,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2477,
+        "confidence": 0.526237518589335,
+        "lift": 295.81872990686657,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 1870,
+        "confidence": 0.40154605969508267,
+        "lift": 277.1999113412431,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 1870,
+        "confidence": 0.40154605969508267,
+        "lift": 277.1999113412431,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 2823,
+        "confidence": 0.4608979591836735,
+        "lift": 235.90652215135378,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 2823,
+        "confidence": 0.44945072440694156,
+        "lift": 235.90652215135376,
+        "a_id": 38544,
+        "b_id": 4962
+      }
+    ],
+    "wall_s": 179.30834479999612,
+    "peak_worker_rss_mb": 775.196672,
+    "rss_increase_mb": 739.71712,
+    "stage": "full",
+    "baskets": 3214874,
+    "support_pct": 0.05,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 168.9221833999909,
+    "worker_baseline_mb": 35.282944,
+    "worker_final_mb": 267.698176,
+    "distinct_items": 49677,
+    "frequent_items": 3402,
+    "pair_counters": 4538892,
+    "frequent_pairs": 5706,
+    "possible_all_pairs": 1233877326,
+    "rules": 11412,
+    "positive_rules": 11192,
+    "covered_products": 763,
+    "coverage_pct": 1.5355820318789244,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2260,
+        "confidence": 0.47921967769296014,
+        "lift": 327.30632719428036,
+        "a_id": 15984,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2260,
+        "confidence": 0.4801359677076694,
+        "lift": 327.3063271942803,
+        "a_id": 48220,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2702,
+        "confidence": 0.5729431721798134,
+        "lift": 322.07380795915464,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2702,
+        "confidence": 0.4724602203182375,
+        "lift": 322.07380795915464,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2477,
+        "confidence": 0.43311767791571953,
+        "lift": 295.81872990686657,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2477,
+        "confidence": 0.526237518589335,
+        "lift": 295.81872990686657,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Coconut Chia Bar",
+        "then_buy": "Chocolate Peanut Butter",
+        "support": 1870,
+        "confidence": 0.40154605969508267,
+        "lift": 277.1999113412431,
+        "a_id": 23291,
+        "b_id": 35633
+      },
+      {
+        "if_bought": "Chocolate Peanut Butter",
+        "then_buy": "Coconut Chia Bar",
+        "support": 1870,
+        "confidence": 0.40154605969508267,
+        "lift": 277.1999113412431,
+        "a_id": 35633,
+        "b_id": 23291
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 2823,
+        "confidence": 0.4608979591836735,
+        "lift": 235.90652215135378,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 2823,
+        "confidence": 0.44945072440694156,
+        "lift": 235.90652215135376,
+        "a_id": 38544,
+        "b_id": 4962
+      }
+    ],
+    "wall_s": 169.66099280002527,
+    "peak_worker_rss_mb": 774.979584,
+    "rss_increase_mb": 739.69664,
+    "stage": "full",
+    "baskets": 3214874,
+    "support_pct": 0.05,
+    "repeat": 3
+  },
+  {
+    "status": "ok",
+    "mining_s": 154.17592599999625,
+    "worker_baseline_mb": 35.38944,
+    "worker_final_mb": 239.382528,
+    "distinct_items": 49677,
+    "frequent_items": 2375,
+    "pair_counters": 2435349,
+    "frequent_pairs": 3029,
+    "possible_all_pairs": 1233877326,
+    "rules": 6058,
+    "positive_rules": 5948,
+    "covered_products": 466,
+    "coverage_pct": 0.9378521977137337,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2702,
+        "confidence": 0.5729431721798134,
+        "lift": 322.07380795915464,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2702,
+        "confidence": 0.4724602203182375,
+        "lift": 322.07380795915464,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2477,
+        "confidence": 0.43311767791571953,
+        "lift": 295.81872990686657,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2477,
+        "confidence": 0.526237518589335,
+        "lift": 295.81872990686657,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 2823,
+        "confidence": 0.4608979591836735,
+        "lift": 235.90652215135378,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 2823,
+        "confidence": 0.44945072440694156,
+        "lift": 235.90652215135376,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2767,
+        "confidence": 0.43410731095073735,
+        "lift": 182.69411011721965,
+        "a_id": 23296,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2767,
+        "confidence": 0.36222018588820526,
+        "lift": 182.69411011721965,
+        "a_id": 44156,
+        "b_id": 23296
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Peach on the Bottom Nonfat Greek Yogurt",
+        "support": 2665,
+        "confidence": 0.3488676528341406,
+        "lift": 144.10452865700952,
+        "a_id": 44156,
+        "b_id": 33548
+      },
+      {
+        "if_bought": "Peach on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2665,
+        "confidence": 0.34241295130412436,
+        "lift": 144.1045286570095,
+        "a_id": 33548,
+        "b_id": 44156
+      }
+    ],
+    "wall_s": 154.88959589999286,
+    "peak_worker_rss_mb": 505.286656,
+    "rss_increase_mb": 469.897216,
+    "stage": "full",
+    "baskets": 3214874,
+    "support_pct": 0.075,
+    "repeat": 1
+  },
+  {
+    "status": "ok",
+    "mining_s": 143.06199329998344,
+    "worker_baseline_mb": 35.38944,
+    "worker_final_mb": 239.476736,
+    "distinct_items": 49677,
+    "frequent_items": 2375,
+    "pair_counters": 2435349,
+    "frequent_pairs": 3029,
+    "possible_all_pairs": 1233877326,
+    "rules": 6058,
+    "positive_rules": 5948,
+    "covered_products": 466,
+    "coverage_pct": 0.9378521977137337,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2702,
+        "confidence": 0.5729431721798134,
+        "lift": 322.07380795915464,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2702,
+        "confidence": 0.4724602203182375,
+        "lift": 322.07380795915464,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2477,
+        "confidence": 0.43311767791571953,
+        "lift": 295.81872990686657,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2477,
+        "confidence": 0.526237518589335,
+        "lift": 295.81872990686657,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 2823,
+        "confidence": 0.4608979591836735,
+        "lift": 235.90652215135378,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 2823,
+        "confidence": 0.44945072440694156,
+        "lift": 235.90652215135376,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2767,
+        "confidence": 0.43410731095073735,
+        "lift": 182.69411011721965,
+        "a_id": 23296,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2767,
+        "confidence": 0.36222018588820526,
+        "lift": 182.69411011721965,
+        "a_id": 44156,
+        "b_id": 23296
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Peach on the Bottom Nonfat Greek Yogurt",
+        "support": 2665,
+        "confidence": 0.3488676528341406,
+        "lift": 144.10452865700952,
+        "a_id": 44156,
+        "b_id": 33548
+      },
+      {
+        "if_bought": "Peach on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2665,
+        "confidence": 0.34241295130412436,
+        "lift": 144.1045286570095,
+        "a_id": 33548,
+        "b_id": 44156
+      }
+    ],
+    "wall_s": 143.73977309998008,
+    "peak_worker_rss_mb": 505.28256,
+    "rss_increase_mb": 469.89312,
+    "stage": "full",
+    "baskets": 3214874,
+    "support_pct": 0.075,
+    "repeat": 2
+  },
+  {
+    "status": "ok",
+    "mining_s": 141.09425729999202,
+    "worker_baseline_mb": 35.381248,
+    "worker_final_mb": 239.4112,
+    "distinct_items": 49677,
+    "frequent_items": 2375,
+    "pair_counters": 2435349,
+    "frequent_pairs": 3029,
+    "possible_all_pairs": 1233877326,
+    "rules": 6058,
+    "positive_rules": 5948,
+    "covered_products": 466,
+    "coverage_pct": 0.9378521977137337,
+    "top_rules": [
+      {
+        "if_bought": "Almond Milk Blueberry Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2702,
+        "confidence": 0.5729431721798134,
+        "lift": 322.07380795915464,
+        "a_id": 15984,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Blueberry Yogurt",
+        "support": 2702,
+        "confidence": 0.4724602203182375,
+        "lift": 322.07380795915464,
+        "a_id": 38312,
+        "b_id": 15984
+      },
+      {
+        "if_bought": "Almond Milk Strawberry Yogurt",
+        "then_buy": "Almond Milk Peach Yogurt",
+        "support": 2477,
+        "confidence": 0.43311767791571953,
+        "lift": 295.81872990686657,
+        "a_id": 38312,
+        "b_id": 48220
+      },
+      {
+        "if_bought": "Almond Milk Peach Yogurt",
+        "then_buy": "Almond Milk Strawberry Yogurt",
+        "support": 2477,
+        "confidence": 0.526237518589335,
+        "lift": 295.81872990686657,
+        "a_id": 48220,
+        "b_id": 38312
+      },
+      {
+        "if_bought": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "then_buy": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "support": 2823,
+        "confidence": 0.4608979591836735,
+        "lift": 235.90652215135378,
+        "a_id": 4962,
+        "b_id": 38544
+      },
+      {
+        "if_bought": "Organic Whole Milk Strawberry Beet Berry Yogurt Pouch",
+        "then_buy": "Yotoddler Organic Pear Spinach Mango Yogurt",
+        "support": 2823,
+        "confidence": 0.44945072440694156,
+        "lift": 235.90652215135376,
+        "a_id": 38544,
+        "b_id": 4962
+      },
+      {
+        "if_bought": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2767,
+        "confidence": 0.43410731095073735,
+        "lift": 182.69411011721965,
+        "a_id": 23296,
+        "b_id": 44156
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Blueberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2767,
+        "confidence": 0.36222018588820526,
+        "lift": 182.69411011721965,
+        "a_id": 44156,
+        "b_id": 23296
+      },
+      {
+        "if_bought": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Peach on the Bottom Nonfat Greek Yogurt",
+        "support": 2665,
+        "confidence": 0.3488676528341406,
+        "lift": 144.10452865700952,
+        "a_id": 44156,
+        "b_id": 33548
+      },
+      {
+        "if_bought": "Peach on the Bottom Nonfat Greek Yogurt",
+        "then_buy": "Strawberry on the Bottom Nonfat Greek Yogurt",
+        "support": 2665,
+        "confidence": 0.34241295130412436,
+        "lift": 144.1045286570095,
+        "a_id": 33548,
+        "b_id": 44156
+      }
+    ],
+    "wall_s": 141.82063500001095,
+    "peak_worker_rss_mb": 505.372672,
+    "rss_increase_mb": 469.99142400000005,
+    "stage": "full",
+    "baskets": 3214874,
+    "support_pct": 0.075,
+    "repeat": 3
+  }
+]

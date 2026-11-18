@@ -1,0 +1,48 @@
+{
+  "started_utc": "2026-11-18T05:08:31.834375+00:00",
+  "seed": 42,
+  "repeats": 3,
+  "sample_sizes": [
+    50000,
+    250000
+  ],
+  "supports_pct": [
+    0.5,
+    0.25,
+    0.1,
+    0.075,
+    0.05
+  ],
+  "timeout_s": 300.0,
+  "max_worker_mb": 2048.0,
+  "max_pair_counters": 5000000,
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.3",
+  "pandas": "3.0.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "protocol": "5 supports at 50k; up to 3 at 250k; up to 2 on every prior order",
+  "dataset": {
+    "source": "order_products__prior.csv",
+    "source_bytes": 577550706,
+    "source_sha256": "27b59dc9cf0d485f55e64e0bc9c5d6fb077ae167f8dfeab9246a03b5b0186359",
+    "basket_lines": 32434489,
+    "orders": 3214874,
+    "catalogue_products": 49688,
+    "preparation_s": 11.695549600000959
+  },
+  "parent_rss_mb": 91.049984,
+  "selected_after_sample_1": [
+    0.05,
+    0.075,
+    0.1
+  ],
+  "selected_after_sample_2": [
+    0.05,
+    0.075
+  ],
+  "selected_after_full": [
+    0.05,
+    0.075
+  ],
+  "finished_utc": "2026-11-18T05:27:10.936719+00:00"
+}
