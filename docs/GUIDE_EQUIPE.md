@@ -46,10 +46,11 @@ Donc pour ta tâche : **garde toujours les vraies sorties** (temps, mémoire, er
 ## 4. Installation (une seule fois, 10 min)
 
 1. **GitHub** : envoie ton pseudo à Arthur pour qu'il t'ajoute au repo (accepte l'invitation reçue par mail).
-2. **Kaggle** : crée un compte sur kaggle.com → photo de profil → **Settings** → section **API** → **Create New Token**. Copie le token (`KGAT_...`) quelque part de sûr.
+2. **Données (Google Drive)** : Arthur partage avec toi un dossier Drive nommé `instacart`. Ouvre-le, clic droit sur le dossier → **Organiser → Ajouter un raccourci** → **Mon Drive**. Garde le nom `instacart`.
 3. **Colab** : va sur colab.research.google.com → **Fichier → Ouvrir un notebook → GitHub** → tape `arthurcomet/smartbasket-frenchies` → ouvre `notebooks/01_data.ipynb`.
-4. **Secret Colab** : icône 🔑 dans la barre de gauche → **Ajouter un secret** → nom `KAGGLE_API_TOKEN`, valeur = ton token → active **Accès au notebook**.
-5. **Exécution → Tout exécuter**. Ça prend 3 à 5 min. Si tu obtiens les mêmes chiffres que ci-dessus, tout est bon.
+4. **Exécution → Tout exécuter**. Colab demande l'accès à ton Drive : accepte. Ça prend 3 à 5 min. Si tu obtiens les mêmes chiffres que ci-dessus, tout est bon.
+
+Plan B, si le Drive ne marche pas : crée un compte sur kaggle.com → **Settings** → **API** → **Create New Token**, puis dans Colab icône 🔑 → secret `KAGGLE_API_TOKEN` avec ce token → active **Accès au notebook**. Le notebook télécharge alors les données tout seul.
 
 ## 5. Comment travailler
 
