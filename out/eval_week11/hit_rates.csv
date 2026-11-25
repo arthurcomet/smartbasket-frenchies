@@ -1,0 +1,9 @@
+rules,method,hit@5_%,hit@10_%
+A-Priori 0.05% (notebook 02),Best-sellers,5.08,7.38
+A-Priori 0.05% (notebook 02),Rules by lift,3.09,4.82
+A-Priori 0.05% (notebook 02),Rules by confidence,6.12,8.74
+A-Priori 0.05% (notebook 02),Rules + best-sellers,3.49,5.45
+PCY 0.01% (notebook 03),Best-sellers,5.08,7.38
+PCY 0.01% (notebook 03),Rules by lift,3.65,5.41
+PCY 0.01% (notebook 03),Rules by confidence,7.44,10.89
+PCY 0.01% (notebook 03),Rules + best-sellers,3.74,5.57

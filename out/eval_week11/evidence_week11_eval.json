@@ -1,0 +1,76 @@
+{
+  "seed": 42,
+  "test_file": "order_products__train.csv",
+  "ks": [
+    5,
+    10
+  ],
+  "hit_rates": [
+    {
+      "rules": "A-Priori 0.05% (notebook 02)",
+      "method": "Best-sellers",
+      "hit@5_%": 5.08,
+      "hit@10_%": 7.38
+    },
+    {
+      "rules": "A-Priori 0.05% (notebook 02)",
+      "method": "Rules by lift",
+      "hit@5_%": 3.09,
+      "hit@10_%": 4.82
+    },
+    {
+      "rules": "A-Priori 0.05% (notebook 02)",
+      "method": "Rules by confidence",
+      "hit@5_%": 6.12,
+      "hit@10_%": 8.74
+    },
+    {
+      "rules": "A-Priori 0.05% (notebook 02)",
+      "method": "Rules + best-sellers",
+      "hit@5_%": 3.49,
+      "hit@10_%": 5.45
+    },
+    {
+      "rules": "PCY 0.01% (notebook 03)",
+      "method": "Best-sellers",
+      "hit@5_%": 5.08,
+      "hit@10_%": 7.38
+    },
+    {
+      "rules": "PCY 0.01% (notebook 03)",
+      "method": "Rules by lift",
+      "hit@5_%": 3.65,
+      "hit@10_%": 5.41
+    },
+    {
+      "rules": "PCY 0.01% (notebook 03)",
+      "method": "Rules by confidence",
+      "hit@5_%": 7.44,
+      "hit@10_%": 10.89
+    },
+    {
+      "rules": "PCY 0.01% (notebook 03)",
+      "method": "Rules + best-sellers",
+      "hit@5_%": 3.74,
+      "hit@10_%": 5.57
+    }
+  ],
+  "coverage": [
+    {
+      "rules": "A-Priori 0.05% (notebook 02)",
+      "test_baskets": 124364,
+      "baskets_with_a_rule_recommendation_%": 87.48,
+      "hit@10_when_rules_recommend_%": 5.5,
+      "hidden_product_is_recommendable_%": 45.96,
+      "seconds": 26.7
+    },
+    {
+      "rules": "PCY 0.01% (notebook 03)",
+      "test_baskets": 124364,
+      "baskets_with_a_rule_recommendation_%": 96.33,
+      "hit@10_when_rules_recommend_%": 5.62,
+      "hidden_product_is_recommendable_%": 72.9,
+      "seconds": 153.9
+    }
+  ]
+}
