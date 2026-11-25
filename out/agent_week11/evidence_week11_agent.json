@@ -1,0 +1,9 @@
+{
+  "model": "solar-pro4",
+  "rules_file": "https://raw.githubusercontent.com/arthurcomet/smartbasket-frenchies/main/out/apriori_20261118/rules_full_support_0p05.csv",
+  "conversations": 5,
+  "answered": 5,
+  "used_search_then_recommend": 4,
+  "tool_calls_total": 14,
+  "errors": []
+}

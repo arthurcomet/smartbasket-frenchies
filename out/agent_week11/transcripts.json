@@ -1,0 +1,407 @@
+[
+  {
+    "user": "I'm making guacamole, I already have avocados and limes. What else should I buy?",
+    "tool_calls": [
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "avocado"
+        },
+        "result": {
+          "query": "avocado",
+          "matches": [
+            {
+              "product": "Organic Hass Avocado",
+              "baskets": 213584
+            },
+            {
+              "product": "Organic Avocado",
+              "baskets": 176815
+            },
+            {
+              "product": "Hass Avocados",
+              "baskets": 50221
+            },
+            {
+              "product": "Small Hass Avocado",
+              "baskets": 49021
+            },
+            {
+              "product": "Hass Avocado",
+              "baskets": 17565
+            }
+          ],
+          "note": ""
+        }
+      },
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "lime"
+        },
+        "result": {
+          "query": "lime",
+          "matches": [
+            {
+              "product": "Limes",
+              "baskets": 140627
+            },
+            {
+              "product": "Lime Sparkling Water",
+              "baskets": 46546
+            },
+            {
+              "product": "Lime",
+              "baskets": 10576
+            }
+          ],
+          "note": ""
+        }
+      },
+      {
+        "tool": "recommend_for_basket",
+        "arguments": {
+          "products": [
+            "Organic Hass Avocado",
+            "Limes"
+          ],
+          "k": 5
+        },
+        "result": {
+          "basket": [
+            "Organic Hass Avocado",
+            "Limes"
+          ],
+          "not_found": [],
+          "recommendations": [
+            {
+              "product": "Poblano Pepper",
+              "because_you_have": "Limes",
+              "confidence": 0.013,
+              "lift": 6.31,
+              "explanation": "1% of the baskets with Limes also contain Poblano Pepper, 6.3 times more often than an average basket."
+            },
+            {
+              "product": "Bunched Cilantro",
+              "because_you_have": "Limes",
+              "confidence": 0.089,
+              "lift": 6.27,
+              "explanation": "9% of the baskets with Limes also contain Bunched Cilantro, 6.3 times more often than an average basket."
+            },
+            {
+              "product": "Organic Jalapeno Pepper",
+              "because_you_have": "Limes",
+              "confidence": 0.039,
+              "lift": 6.12,
+              "explanation": "4% of the baskets with Limes also contain Organic Jalapeno Pepper, 6.1 times more often than an average basket."
+            },
+            {
+              "product": "Jalapeno Peppers",
+              "because_you_have": "Limes",
+              "confidence": 0.081,
+              "lift": 6.12,
+              "explanation": "8% of the baskets with Limes also contain Jalapeno Peppers, 6.1 times more often than an average basket."
+            },
+            {
+              "product": "Organic Cilantro",
+              "because_you_have": "Limes",
+              "confidence": 0.125,
+              "lift": 5.78,
+              "explanation": "12% of the baskets with Limes also contain Organic Cilantro, 5.8 times more often than an average basket."
+            }
+          ],
+          "note": ""
+        }
+      }
+    ],
+    "answer": "For guacamole, here's what goes well with your avocados and limes:\n\n- **Bunched Cilantro** — 9% of lime baskets also have cilantro (6.3× more likely)\n- **Organic Cilantro** — 12% of lime baskets also have organic cilantro (5.8× more likely)\n- **Jalapeno Peppers** — 8% of lime baskets also have jalapeños (6.1× more likely)\n- **Organic Jalapeno Pepper** — 4% of lime baskets also have organic jalapeños (6.1× more likely)\n- **Poblano Pepper** — 1% of lime baskets also have poblano (6.3× more likely)\n\nCilantro and jalapeños are classic guacamole ingredients — they'll add fresh flavor and a little heat. Poblano is a milder pepper option if you prefer less spice."
+  },
+  {
+    "user": "Pasta night: I have spaghetti and marinara sauce in my cart.",
+    "tool_calls": [
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "spaghetti"
+        },
+        "result": {
+          "query": "spaghetti",
+          "matches": [
+            {
+              "product": "Spaghetti",
+              "baskets": 15813
+            },
+            {
+              "product": "Organic Spaghetti Squash",
+              "baskets": 13637
+            },
+            {
+              "product": "Spaghetti  No 12",
+              "baskets": 8153
+            },
+            {
+              "product": "Spaghetti Pasta",
+              "baskets": 7969
+            },
+            {
+              "product": "Organic Spaghetti Pasta",
+              "baskets": 6310
+            }
+          ],
+          "note": ""
+        }
+      },
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "marinara sauce"
+        },
+        "result": {
+          "query": "marinara sauce",
+          "matches": [
+            {
+              "product": "Marinara Sauce",
+              "baskets": 19998
+            },
+            {
+              "product": "Marinara Pasta Sauce",
+              "baskets": 11066
+            },
+            {
+              "product": "All Natural Marinara Sauce",
+              "baskets": 8548
+            }
+          ],
+          "note": ""
+        }
+      },
+      {
+        "tool": "recommend_for_basket",
+        "arguments": {
+          "products": [
+            "Spaghetti",
+            "Marinara Sauce"
+          ],
+          "k": 5
+        },
+        "result": {
+          "basket": [
+            "Spaghetti",
+            "Marinara Sauce"
+          ],
+          "not_found": [],
+          "recommendations": [
+            {
+              "product": "Organic Whole Milk",
+              "because_you_have": "Spaghetti",
+              "confidence": 0.103,
+              "lift": 2.39,
+              "explanation": "10% of the baskets with Spaghetti also contain Organic Whole Milk, 2.4 times more often than an average basket."
+            },
+            {
+              "product": "Large Lemon",
+              "because_you_have": "Spaghetti",
+              "confidence": 0.105,
+              "lift": 2.22,
+              "explanation": "11% of the baskets with Spaghetti also contain Large Lemon, 2.2 times more often than an average basket."
+            },
+            {
+              "product": "Organic Strawberries",
+              "because_you_have": "Marinara Sauce",
+              "confidence": 0.17,
+              "lift": 2.07,
+              "explanation": "17% of the baskets with Marinara Sauce also contain Organic Strawberries, 2.1 times more often than an average basket."
+            },
+            {
+              "product": "Organic Avocado",
+              "because_you_have": "Spaghetti",
+              "confidence": 0.112,
+              "lift": 2.03,
+              "explanation": "11% of the baskets with Spaghetti also contain Organic Avocado, 2.0 times more often than an average basket."
+            },
+            {
+              "product": "Banana",
+              "because_you_have": "Spaghetti",
+              "confidence": 0.268,
+              "lift": 1.82,
+              "explanation": "27% of the baskets with Spaghetti also contain Banana, 1.8 times more often than an average basket."
+            }
+          ],
+          "note": ""
+        }
+      }
+    ],
+    "answer": "Here are some items that often go with your pasta night:\n\n- **Organic Whole Milk** – 10% of Spaghetti baskets also have it (2.4× more likely).\n- **Large Lemon** – 11% of Spaghetti baskets include it (2.2× more likely).\n- **Organic Strawberries** – 17% of Marinara Sauce baskets have them (2.1× more likely).\n- **Organic Avocado** – 11% of Spaghetti baskets add it (2.0× more likely).\n- **Banana** – 27% of Spaghetti baskets also grab one (1.8× more likely).\n\nThese are the top picks from real shopping data. Enjoy your pasta night!"
+  },
+  {
+    "user": "Tacos tonight with ground beef and taco seasoning, what am I missing?",
+    "tool_calls": [
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "ground beef"
+        },
+        "result": {
+          "query": "ground beef",
+          "matches": [
+            {
+              "product": "85% Lean Ground Beef",
+              "baskets": 12123
+            },
+            {
+              "product": "93% Ground Beef",
+              "baskets": 7630
+            }
+          ],
+          "note": ""
+        }
+      },
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "taco seasoning"
+        },
+        "result": {
+          "query": "taco seasoning",
+          "matches": [
+            {
+              "product": "Taco Seasoning",
+              "baskets": 8992
+            }
+          ],
+          "note": ""
+        }
+      },
+      {
+        "tool": "recommend_for_basket",
+        "arguments": {
+          "products": [
+            "85% Lean Ground Beef",
+            "Taco Seasoning"
+          ],
+          "k": 5
+        },
+        "result": {
+          "basket": [
+            "85% Lean Ground Beef",
+            "Taco Seasoning"
+          ],
+          "not_found": [],
+          "recommendations": [
+            {
+              "product": "Organic Whole Milk",
+              "because_you_have": "85% Lean Ground Beef",
+              "confidence": 0.136,
+              "lift": 3.16,
+              "explanation": "14% of the baskets with 85% Lean Ground Beef also contain Organic Whole Milk, 3.2 times more often than an average basket."
+            },
+            {
+              "product": "Large Lemon",
+              "because_you_have": "85% Lean Ground Beef",
+              "confidence": 0.135,
+              "lift": 2.83,
+              "explanation": "13% of the baskets with 85% Lean Ground Beef also contain Large Lemon, 2.8 times more often than an average basket."
+            },
+            {
+              "product": "Organic Avocado",
+              "because_you_have": "85% Lean Ground Beef",
+              "confidence": 0.151,
+              "lift": 2.75,
+              "explanation": "15% of the baskets with 85% Lean Ground Beef also contain Organic Avocado, 2.8 times more often than an average basket."
+            },
+            {
+              "product": "Organic Baby Spinach",
+              "because_you_have": "85% Lean Ground Beef",
+              "confidence": 0.139,
+              "lift": 1.84,
+              "explanation": "14% of the baskets with 85% Lean Ground Beef also contain Organic Baby Spinach, 1.8 times more often than an average basket."
+            },
+            {
+              "product": "Banana",
+              "because_you_have": "85% Lean Ground Beef",
+              "confidence": 0.27,
+              "lift": 1.84,
+              "explanation": "27% of the baskets with 85% Lean Ground Beef also contain Banana, 1.8 times more often than an average basket."
+            }
+          ],
+          "note": ""
+        }
+      }
+    ],
+    "answer": "Here’s what shoppers often grab with ground beef and taco seasoning:\n\n- **Organic Avocado** – 15% of beef baskets also have it (2.8× more likely). Great for topping tacos.\n- **Large Lemon** – 13% of beef baskets (2.8× more likely). Squeeze over tacos for brightness.\n- **Organic Whole Milk** – 14% of beef baskets (3.2× more likely). A classic side for taco night.\n- **Organic Baby Spinach** – 14% of beef baskets (1.8× more likely). Use as a fresh bed or garnish.\n- **Banana** – 27% of beef baskets (1.8× more likely). A simple dessert after tacos.\n\nIf you want a fuller taco setup, avocado and lemon are the most taco-specific picks."
+  },
+  {
+    "user": "J'ai des oeufs et du pain dans mon panier, tu me conseilles quoi ?",
+    "tool_calls": [
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "oeufs"
+        },
+        "result": {
+          "query": "oeufs",
+          "matches": [],
+          "note": "No product with these words in our rules (only products frequent enough are covered)."
+        }
+      },
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "pain"
+        },
+        "result": {
+          "query": "pain",
+          "matches": [],
+          "note": "No product with these words in our rules (only products frequent enough are covered)."
+        }
+      },
+      {
+        "tool": "recommend_for_basket",
+        "arguments": {
+          "products": [
+            "oeufs",
+            "pain"
+          ]
+        },
+        "result": {
+          "basket": [],
+          "not_found": [
+            "oeufs",
+            "pain"
+          ],
+          "recommendations": [],
+          "note": "No association rule for these products."
+        }
+      }
+    ],
+    "answer": "Désolé, je n'ai pas trouvé de produits correspondants à \"oeufs\" et \"pain\" dans nos données, donc je ne peux pas te conseiller de complément pour le moment. Essaye avec des noms plus précis (ex. \"pain de mie\", \"oeufs entiers\") si tu veux."
+  },
+  {
+    "user": "I need a phone charger and a new laptop.",
+    "tool_calls": [
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "phone charger"
+        },
+        "result": {
+          "query": "phone charger",
+          "matches": [],
+          "note": "No product with these words in our rules (only products frequent enough are covered)."
+        }
+      },
+      {
+        "tool": "search_products",
+        "arguments": {
+          "query": "laptop"
+        },
+        "result": {
+          "query": "laptop",
+          "matches": [],
+          "note": "No product with these words in our rules (only products frequent enough are covered)."
+        }
+      }
+    ],
+    "answer": "I couldn’t find a phone charger or a laptop in our store data — those items aren’t covered by our grocery association rules. If you’d like, I can help with other grocery items you need."
+  }
+]

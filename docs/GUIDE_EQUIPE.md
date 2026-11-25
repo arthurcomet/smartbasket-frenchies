@@ -76,8 +76,8 @@ Message de commit : court et clair, ex. `Week 11: support sweep 0.5% to 0.05%`.
 | Semaine | Objectif | Rendu |
 |---|---|---|
 | 10 | Données + premier A-Priori | ✅ rendu |
-| 11 | Plus de produits, mesure mémoire, premier agent, plan d'évaluation | Report avant le **1er déc. 23:59** |
-| 12 | Agent Solar branché sur les règles | Report + présentation (à confirmer) |
+| 11 | A-Priori sur tout le dataset, PCY, premier agent Solar, évaluation | Report avant le **1er déc. 23:59** |
+| 12 | MinHash/LSH (produits similaires), agent avec 3 outils | Report + présentation (à confirmer) |
 | 13 | Agent en conversation (noms de produits) | Report |
 | 14 | Évaluation contre la baseline popularité | Report |
 | 15 | Présentation finale + démo | Présentation + peer evaluation |

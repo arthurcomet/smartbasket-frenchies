@@ -1,76 +1,58 @@
-# SmartBasket — Frenchies
+# SmartBasket — Team Frenchies
 
-Projet d'Introduction to Big Data · Korea University Sejong · semestre 2026-2.
+Introduction to Big Data · Korea University Sejong · 2026-2 team project
 
-On cherche des produits souvent achetés ensemble dans le jeu de données Instacart avec A-Priori. Ces règles doivent ensuite servir à un agent Upstage Solar pour proposer des produits complémentaires.
+**Frequent itemset mining on 3.2 million real grocery orders (Instacart), served by an LLM agent powered by Upstage Solar.**
+The user describes a basket in plain language; the agent calls our tools, which read the association rules mined with A-Priori and PCY, and recommends complementary products with the reason (confidence and lift).
 
-## Commencer ici
-
-**Les 30 essais A-Priori sont terminés. Il n'y a rien à relancer pour consulter les résultats.**
-
-| Tu cherches... | Va ici |
+| Course condition | How it is met |
 |---|---|
-| Les conclusions et le seuil conseillé | [Compte rendu A-Priori](reports/apriori_20261118.md) |
-| Le tableau des 10 configurations testées | [Résumé CSV](out/apriori_20261118/summary.csv) |
-| Les règles calculées sur toutes les commandes à 0,05 % | [Règles CSV](out/apriori_20261118/rules_full_support_0p05.csv) |
-| Les consignes pour l'équipe | [Guide d'équipe](docs/GUIDE_EQUIPE.md) et [semaine 11](docs/SEMAINE_11.md) |
+| Big-data method from the course | Frequent itemsets: A-Priori and PCY (MMDS §6.1–6.3) on all 3.2 M orders, association rules with confidence and lift |
+| LLM agent | Solar calls our Python functions as tools (`search_products`, `recommend_for_basket`) |
+| Model | Upstage Solar |
 
-## Où sont les fichiers ?
+## Start here
 
-| Emplacement | Rôle |
+| You are looking for… | Go to |
 |---|---|
-| [`docs/`](docs/) | Consignes d'équipe et prompt pour l'agent IA |
-| [`notebooks/01_data.ipynb`](notebooks/01_data.ipynb) | Chargement des données et premiers essais (semaine 10) |
-| [`notebooks/02_apriori_experiments.ipynb`](notebooks/02_apriori_experiments.ipynb) | Notebook Colab pour reproduire la campagne A-Priori |
-| [`scripts/apriori_experiments.py`](scripts/apriori_experiments.py) | Code de référence des expériences |
-| [`scripts/build_experiment_notebook.py`](scripts/build_experiment_notebook.py) | Génère le notebook 02 depuis le code de référence |
-| [`tests/`](tests/) | Tests sur de petits jeux de contrôle |
-| [`reports/`](reports/) | Comptes rendus lisibles, semaines 10 et 11 |
-| [`out/`](out/) | Fichiers produits : résultats, règles CSV et graphiques |
+| What we did each week | [`reports/`](reports/) — [week 10](reports/week10.md), [week 11](reports/week11.md) |
+| A-Priori on the full dataset, 5 supports, 3 repeats | [Notebook 02 report](reports/apriori_20261118.md) and [`out/apriori_20261118/`](out/apriori_20261118/) |
+| Team guide, weekly tasks, AI prompt (French) | [`docs/`](docs/) |
 
-Le dossier [`out/apriori_20261118/`](out/apriori_20261118/) contient les résultats de la campagne :
+## Notebooks
 
-- `summary.csv` : une ligne par configuration, avec les statistiques des trois répétitions ;
-- `raw_runs.json` : les 30 mesures individuelles ;
-- `report.md` : rapport détaillé généré pendant les essais ;
-- `metadata.json` : paramètres, versions et empreinte SHA-256 des données ;
-- `rules_*.csv` : règles pour chaque configuration, avec confiance et lift non arrondis.
+Run them in order in Google Colab: *File → Open notebook → GitHub* → `arthurcomet/smartbasket-frenchies`.
 
-Les autres fichiers directement dans `out/` viennent de la semaine 10. `data_DONOTPUSH/` contient les données locales Instacart : ce dossier est ignoré par Git.
+| Notebook | Stage | Week |
+|---|---|---|
+| [`01_data.ipynb`](notebooks/01_data.ipynb) | Load and describe the data, first A-Priori on 50,000 orders | 10 |
+| [`02_apriori_experiments.ipynb`](notebooks/02_apriori_experiments.ipynb) | A-Priori on all 3.2 M orders: 10 configurations × 3 repeats, time and memory | 11 |
+| [`03_pcy.ipynb`](notebooks/03_pcy.ipynb) | PCY vs A-Priori at lower supports: pass-2 counters and memory, same frequent pairs | 11 |
+| [`04_agent.ipynb`](notebooks/04_agent.ipynb) | First Upstage Solar agent with two tools on the rules | 11 |
+| [`05_evaluation.ipynb`](notebooks/05_evaluation.ipynb) | Hit-rate of our rules vs a best-sellers baseline on 131k unseen orders | 11 |
 
-## Résultat des expériences
+## Repository
 
-Cinq seuils ont été testés sur 50 000 commandes, trois sur 250 000, puis deux sur les **3 214 874 commandes prior**. Chaque configuration a été répétée trois fois. Les 30 exécutions ont réussi.
-
-Le seuil **0,05 %** est le candidat principal parmi ceux testés : 11 412 règles et 763 produits couverts sur le jeu complet. Le seuil **0,075 %** consomme moins de ressources, mais couvre 466 produits. Le [compte rendu](reports/apriori_20261118.md) explique les limites de cette comparaison : la qualité des recommandations doit encore être évaluée face à une référence basée sur la popularité.
-
-## Reproduire plus tard (facultatif)
-
-Le [notebook 02](notebooks/02_apriori_experiments.ipynb) fonctionne dans Google Colab. Il peut utiliser un dossier Instacart existant via `DATA_DIR` ou télécharger le jeu depuis [Kaggle](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis). Dans Colab, la clé Kaggle doit être enregistrée comme secret `KAGGLE_API_TOKEN`.
-
-En local, avec Python, NumPy et pandas :
-
-```bash
-python scripts/apriori_experiments.py --data-dir data_DONOTPUSH
+```
+notebooks/   one Colab notebook per stage
+scripts/     reference code of the notebook 02 experiments
+tests/       unit tests of the A-Priori experiments (python -m unittest discover -s tests)
+out/         results of each run: evidence JSON, summaries, rules CSV, figures
+reports/     weekly progress reports
+docs/        team guide (French): setup, weekly tasks, AI prompt
 ```
 
-La méthode cherche des paires de produits, sans utiliser le fichier `train`. Les réglages par défaut limitent chaque processus à 300 secondes, 2 048 Mo de mémoire résidente échantillonnée et 5 millions de compteurs de paires. Un essai interrompu est signalé comme tel. Les résultats sont enregistrés dans un nouveau dossier `out/apriori_<date UTC>/`. Les temps dépendent de la machine et ne se comparent pas directement à ceux du notebook 01.
+## Data and keys
 
-Après une modification du script de référence, régénérer le notebook et lancer les tests :
+Data: [Instacart Market Basket Analysis](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis) (Kaggle). It is never committed. The notebooks read it from a Google Drive folder `instacart`, or download it from Kaggle with a Colab secret `KAGGLE_API_TOKEN`.
 
-```bash
-python scripts/build_experiment_notebook.py
-python -m unittest discover -s tests -v
-```
+The agent needs a Colab secret `UPSTAGE_API_KEY`. **Never commit a key: this repository is public.**
 
-## Équipe
+## Team
 
-| Membre | Rôle |
+| Member | Role |
 |---|---|
-| Victor DUMUR | Chargement et description des données |
-| Alexandre GRIMOND | A-Priori et règles d'association |
-| Arthur COMET | Agent Solar et outils |
-| Louis TURQUIN | Évaluation face à la popularité |
-| Merin SALLAMI | Rapport, slides et dépôt |
-
-Le projet répond aux consignes du cours avec A-Priori (MMDS §6.1–6.2), des règles d'association, un agent utilisant ces règles comme outils et le modèle Upstage Solar.
+| Victor DUMUR (leader) | Data loading, PCY |
+| Alexandre GRIMOND | A-Priori experiments on the full dataset |
+| Arthur COMET | Solar agent and tools |
+| Merin SALLAMI | Evaluation, reports |

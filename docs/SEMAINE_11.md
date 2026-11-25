@@ -1,134 +1,53 @@
-# Semaine 11 — tâches de chacun
+# Semaine 11 — tâches de chacun (équipe de 4)
 
-Rapport à rendre avant le **1er décembre 23:59**. Deadline interne : **samedi 29 novembre au soir**, chiffres envoyés à Merin.
+Rapport à rendre avant le **1er décembre 23:59**. Le prof a demandé « more deeper technology » : cette semaine on passe aux **3,2 millions de commandes**, on compare **A-Priori et PCY**, on construit le **premier agent Solar** et on **évalue** contre une baseline.
 
-Chaque tâche part des cellules 0 à 3 de `notebooks/01_data.ipynb` (chargement des données). Les bouts de code ci-dessous sont des **points de départ** : à adapter, lancer et mesurer.
-
-| Qui | Tâche | Notebook | Résultat attendu |
+| Qui | Notebook | Statut | Résultat |
 |---|---|---|---|
-| Victor | Passer à plus de commandes | `02_scale.ipynb` | Temps et mémoire selon la taille de l'échantillon |
-| Alexandre | Baisser le seuil de support | `03_support_sweep.ipynb` | Courbe « seuil → nombre de compteurs », PCY si ça explose |
-| Arthur | Premier agent Solar | `04_agent.ipynb` | Le chatbot répond à un panier avec nos règles |
-| Louis | Évaluation | `05_evaluation.ipynb` | Hit-rate de nos règles contre la baseline popularité |
-| Merin | Cours semaine 2 + rapport | `reports/week11.md` | Outil de l'agent confirmé, rapport assemblé |
+| Alexandre | `02_apriori_experiments.ipynb` | ✅ fait | A-Priori sur tout le dataset, 10 réglages × 3 répétitions |
+| Victor | `03_pcy.ipynb` | à lancer **en premier** | PCY contre A-Priori à des seuils plus bas, règles à 0,01 % |
+| Arthur | `04_agent.ipynb` | à lancer | Agent Solar avec 2 outils, 5 conversations de test |
+| Merin | `05_evaluation.ipynb` + `reports/week11.md` | à lancer **après Victor** | Hit-rate contre la baseline best-sellers, rapport |
+
+**Ordre important** : Victor pousse `out/pcy_week11/` sur GitHub avant que Merin lance le notebook 05, sinon l'évaluation ne trouve que les règles à 0,05 %.
+
+Pour chaque notebook : ouvrir dans Colab depuis GitHub → **Exécution → Tout exécuter** → accepter l'accès au Drive. Les données viennent du dossier `instacart` partagé sur le Drive (voir `GUIDE_EQUIPE.md`).
 
 ---
 
-## Victor — Passer à plus de commandes
+## Victor — PCY contre A-Priori (`03_pcy.ipynb`)
 
-**Pourquoi** : en semaine 10, on n'a utilisé que 50 000 commandes sur 3,2 millions. Il faut savoir jusqu'où on peut monter dans Colab.
+**L'idée en une phrase** : pour recommander plus de produits, il faut baisser le seuil ; A-Priori doit alors compter beaucoup plus de paires au passage 2. PCY profite du passage 1 pour ranger toutes les paires dans des « seaux », et au passage 2 ne compte que les paires dont le seau est fréquent.
 
-**Quoi faire** :
-1. Pour N = 50 000, 200 000, 500 000, 1 000 000 et toutes les commandes : construire les paniers (`groupby(...).apply(frozenset)`) et mesurer le **temps** et la **mémoire**.
-2. Lancer A-Priori (fonction `apriori_pairs` du notebook 01) au même seuil 0,5 % sur chaque taille.
-3. Noter où Colab ralentit trop ou plante (RAM pleine = redémarrage de session : c'est un résultat, note-le).
+**Ce que fait le notebook** (environ 10 à 15 min dans Colab) :
+1. Charge les 32 M de lignes en deux tableaux NumPy.
+2. Passage 1 : compte les produits, et range toutes les paires dans 1 M, 4 M et 16,8 M de seaux.
+3. Passage 2 à 0,05 / 0,02 / 0,01 / 0,005 % : compte A-Priori et PCY, et **vérifie qu'ils trouvent exactement les mêmes paires fréquentes**.
+4. Contrôle : à 0,05 % on doit retrouver les chiffres d'Alexandre (3 402 produits, 4 538 892 paires, 5 706 paires fréquentes).
+5. Sauvegarde les règles à 0,01 % pour l'agent et l'évaluation.
 
-**Code de départ** :
-```python
-import tracemalloc, time
-results = []
-for n in [50_000, 200_000, 500_000, 1_000_000]:
-    ids = rng.choice(all_orders, size=n, replace=False)
-    tracemalloc.start(); t0 = time.time()
-    b = prior[prior["order_id"].isin(ids)].groupby("order_id")["product_id"].apply(frozenset).tolist()
-    _, pairs, info = apriori_pairs(b, max(1, int(len(b) * 0.005)))
-    _, peak = tracemalloc.get_traced_memory(); tracemalloc.stop()
-    results.append({"orders": n, "seconds": round(time.time() - t0, 1),
-                    "peak_MB": round(peak / 1e6, 1), **info})
-    print(results[-1])
-```
+**À pousser** : `notebooks/03_pcy.ipynb` (avec les sorties) et le dossier `out/pcy_week11/`.
 
-**À rendre** : `out/evidence_week11_scale.json` + un graphique `out/scale.png` (commandes → secondes et Mo).
+**À savoir dire** : la dernière cellule du notebook contient le texte de présentation à compléter.
 
 ---
 
-## Alexandre — Baisser le seuil de support
+## Arthur — Agent Solar (`04_agent.ipynb`)
 
-**Pourquoi** : à 0,5 %, seuls 257 produits sur 49 677 peuvent être recommandés. Si on baisse le seuil, on couvre plus de produits, mais le nombre de paires à compter explose. C'est exactement le lab 6 task 2, sur de vraies données.
+**L'idée** : l'utilisateur décrit son panier, Solar appelle `search_products` pour trouver les noms exacts, puis `recommend_for_basket`, qui lit les règles d'A-Priori et classe par lift. Solar n'invente rien.
 
-**Quoi faire** :
-1. Sur les 50 000 commandes du notebook 01, lancer `apriori_pairs` avec un seuil de 0,5 %, 0,25 %, 0,1 % et 0,05 %.
-2. Pour chaque seuil, noter : produits fréquents, compteurs de paires, paires fréquentes, secondes, mémoire max.
-3. Tracer la courbe « seuil → compteurs » (échelle log).
-4. Si la passe 2 devient trop lourde : reprendre **PCY** (`w06-apriori/task3_pcy.py` du lab 6) et comparer le nombre de compteurs.
-5. Bonus utile pour la suite : regarder si le top 10 par lift change quand on baisse le seuil.
+**Avant de lancer** : clé sur console.upstage.ai → Secrets Colab, nom `UPSTAGE_API_KEY`. Si la cellule de connexion échoue, changer `MODEL` (solar-pro3, solar-pro4) ou `BASE_URL` (`https://api.upstage.ai/v1/solar`) dans la 1re cellule.
 
-**Code de départ** :
-```python
-import tracemalloc, time
-sweep = []
-for pct in [0.5, 0.25, 0.1, 0.05]:
-    s = max(1, int(N * pct / 100))
-    tracemalloc.start(); t0 = time.time()
-    _, pairs, info = apriori_pairs(baskets, s)
-    _, peak = tracemalloc.get_traced_memory(); tracemalloc.stop()
-    sweep.append({"support_pct": pct, "support_baskets": s, **info,
-                  "seconds": round(time.time() - t0, 2), "peak_MB": round(peak / 1e6, 1)})
-    print(sweep[-1])
-```
-
-**À rendre** : `out/evidence_week11_sweep.json`, `out/support_sweep.png`, et le fichier de règles au seuil retenu `out/rules_week11.csv` (même format que `rules_week10.csv`). Arthur et Louis en ont besoin.
+**À pousser** : `notebooks/04_agent.ipynb` (avec les conversations) et `out/agent_week11/`.
 
 ---
 
-## Arthur — Premier agent Solar
+## Merin — Évaluation + rapport (`05_evaluation.ipynb`, `reports/week11.md`)
 
-**Pourquoi** : c'est la condition 2 + 3 du prof. Le chatbot ne doit rien inventer : il appelle notre fonction, qui lit les règles d'A-Priori.
+**L'idée** : 131 209 commandes que A-Priori n'a jamais vues (fichier *train*). Dans chacune, on cache un produit au hasard et on regarde s'il revient dans le top 5 / top 10 de chaque méthode : best-sellers, règles par lift, règles par confiance, règles + best-sellers.
 
-**Quoi faire** :
-1. Créer une clé sur console.upstage.ai, la mettre dans les Secrets Colab sous `UPSTAGE_API_KEY`.
-2. Écrire `get_recommendations(products, k=5)` : à partir de `out/rules_week10.csv`, garder les règles dont `if_bought` est dans le panier, exclure ce qui est déjà dans le panier, trier par **lift**, renvoyer les k meilleurs avec leur lift.
-3. Brancher cette fonction comme outil (tool calling) sur Solar et tester 5 paniers.
-4. Garder les conversations : ce sont les preuves du rapport.
+**À lancer après** que Victor a poussé `out/pcy_week11/`. Durée : 5 à 10 min.
 
-**Point bloquant** : utiliser **le même outil d'agent que la semaine 2** du cours (Merin le confirme). En attendant, l'API Upstage s'utilise comme celle d'OpenAI ; vérifier le nom exact du modèle dans la console Upstage :
-```python
-from openai import OpenAI
-from google.colab import userdata
-client = OpenAI(api_key=userdata.get("UPSTAGE_API_KEY"), base_url="https://api.upstage.ai/v1")
-```
+**À pousser** : `notebooks/05_evaluation.ipynb`, `out/eval_week11/`, puis `reports/week11.md` complété avec les chiffres des notebooks 03, 04 et 05 (les crochets `[ ]`).
 
-**À rendre** : `notebooks/04_agent.ipynb` avec 5 conversations, et la liste de ce qui a raté (ex. produit tapé « eggs » introuvable).
-
----
-
-## Louis — Évaluation
-
-**Pourquoi** : le prof veut toujours une comparaison avec une baseline. La nôtre : « recommander simplement les produits les plus vendus ». Si nos règles ne font pas mieux, il faut le savoir et l'expliquer.
-
-**Quoi faire** :
-1. Prendre 10 000 commandes **qui ne sont pas** dans les 50 000 du notebook 01 (pour ne pas tricher).
-2. Pour chaque commande d'au moins 2 produits : cacher un produit au hasard (graine 42).
-3. **Nos règles** : avec les produits restants, recommander les 5 meilleurs selon le lift (`out/rules_week10.csv`).
-4. **Baseline** : recommander les 5 produits les plus vendus qui ne sont pas déjà dans le panier.
-5. **Hit-rate@5** = part des commandes où le produit caché est dans les 5 recommandés. Comparer les deux.
-6. Noter aussi la **couverture** : dans combien de commandes nos règles proposent au moins un produit (avec 257 produits seulement, ce sera faible : c'est un vrai résultat à expliquer).
-
-**Code de départ** :
-```python
-import random
-random.seed(42)
-rules = pd.read_csv("out/rules_week10.csv")   # à uploader dans Colab, ou lire depuis GitHub
-def recommend_rules(basket, k=5):
-    r = rules[rules["a_id"].isin(basket) & ~rules["b_id"].isin(basket)]
-    return r.groupby("b_id")["lift"].max().sort_values(ascending=False).head(k).index.tolist()
-def recommend_popular(basket, k=5):
-    return [p for p in item_count.index if p not in basket][:k]
-```
-
-**À rendre** : `out/evidence_week11_eval.json` (hit-rate des deux méthodes, couverture, nombre de commandes testées) et `notebooks/05_evaluation.ipynb`.
-
----
-
-## Merin — Cours semaine 2 + rapport
-
-**Pourquoi** : le prof a dit que l'agent doit utiliser **l'outil vu en semaine 2**. Sans ça, Arthur risque de construire avec le mauvais outil.
-
-**Quoi faire** :
-1. Retrouver les slides ou le code de la semaine 2 (« coding agent ») sur le LMS ou le site du cours, et noter : quelle librairie / quel outil, et un exemple de code. Envoyer à Arthur **dès que possible**.
-2. Récupérer les chiffres de chacun le samedi 29 novembre.
-3. Écrire `reports/week11.md` sur le modèle de `reports/week10.md` (les 5 parties), avec « qui a fait quoi ».
-4. Mettre à jour le tableau des notebooks dans `README.md`.
-5. Le rapport est soumis sur le LMS avant le 1er déc. (une soumission par équipe).
-
-**À rendre** : `reports/week11.md` et le README à jour.
+**Soumission LMS** : le contenu de `reports/week11.md` + le lien du repo, avant le 1er déc. 23:59.
