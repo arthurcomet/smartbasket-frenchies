@@ -1,0 +1,5 @@
+support_pct,support_baskets,frequent_items,apriori_triangular_counters,pass2_s,apriori_counted_pairs,frequent_pairs,apriori_triangular_MB,apriori_triples_MB,pcy_16777216_frequent_buckets_pct,pcy_16777216_candidate_pairs,pcy_16777216_pass2_MB,pcy_16777216_same_frequent_pairs,status,rules,covered_products,coverage_pct_of_catalogue,pcy_1048576_frequent_buckets_pct,pcy_1048576_candidate_pairs,pcy_1048576_pass2_MB,pcy_1048576_same_frequent_pairs,pcy_4194304_frequent_buckets_pct,pcy_4194304_candidate_pairs,pcy_4194304_pass2_MB,pcy_4194304_same_frequent_pairs
+0.05,1608,3402,5785101,9.8,4538892,5706,23.1,54.5,0.03,7504,2.2,True,ok,11412,763,1.54,,,,,,,,
+0.02,643,6985,24391620,13.8,12833613,22028,97.6,154.0,0.14,40429,2.6,True,ok,44056,1997,4.02,,,,,,,,
+0.01,322,10906,59464965,26.5,20568480,56809,237.9,246.8,0.36,134431,3.7,True,ok,113618,3679,7.4,13.14,2922124.0,35.2,True,1.65,417157.0,5.5,True
+0.005,161,15990,127832055,18.0,27863403,138486,511.3,334.4,0.9,410935,7.0,True,ok,276972,6280,12.64,,,,,,,,

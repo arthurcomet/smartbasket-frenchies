@@ -1,0 +1,4 @@
+buckets,pass1_bucket_array_MB,frequent_buckets_%,candidate_pairs,vs_A-Priori_counted_pairs_%,pass2_MB
+1048576,4.2,13.14,2922124,14.2,35.2
+4194304,16.8,1.65,417157,2.0,5.5
+16777216,67.1,0.36,134431,0.7,3.7
